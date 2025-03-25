@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles that will apply on top of Tailwind */
+:root {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  /* color: white; */
+  min-height: 100vh;
+  /* background-color: theme('colors.gray.900');
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 16px 16px; */
+  /* background-position: 0 0; */
+
+  /* background: linear-gradient(90deg, #151618 15px, transparent 1%) 50%,
+    linear-gradient(#151618 15px, #3e4146 1%) 0, hsla(0, 0%, 100%, 0.16) !important; */
+}
