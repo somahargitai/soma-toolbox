@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="py-4 px-16 sticky top-0 z-50 bg-transparent">
+    <header className="py-4 px-2 md:px-16 sticky top-0 z-50 bg-transparent">
       <div className="px-4 w-full flex justify-between items-center">
         {/* Logo for mobile */}
         <div className="flex items-center md:hidden">

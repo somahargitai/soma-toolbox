@@ -13,6 +13,7 @@ import './styles/notion-cards.css'
 function App() {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
+  const [showAllItems, setShowAllItems] = useState<boolean>(false);
   
   // Filter tools based on the active category and search term
   const filteredTools = useMemo(() => {
@@ -43,6 +44,14 @@ function App() {
     return ['all', ...Array.from(new Set(allCategories))];
   }, []);
 
+  // Get displayed tools (limited to 6 initially, unless showAllItems is true)
+  const displayedTools = useMemo(() => {
+    return showAllItems ? filteredTools : filteredTools.slice(0, 6);
+  }, [filteredTools, showAllItems]);
+
+  // Check if we need to show the "More" button
+  const hasMoreItems = filteredTools.length > 6;
+
   return (
     <DottedBackground> 
       <Header />
@@ -59,8 +68,8 @@ function App() {
 
         {/* Tool Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredTools.length > 0 ? (
-            filteredTools.map((tool: Tool) => (
+          {displayedTools.length > 0 ? (
+            displayedTools.map((tool: Tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))
           ) : (
@@ -70,6 +79,7 @@ function App() {
                 onClick={() => {
                   setActiveFilter('all');
                   setSearchTerm('');
+                  setShowAllItems(false);
                 }}
                 className="mt-4 px-4 py-2 bg-white text-black rounded-full hover:bg-opacity-90"
               >
@@ -78,6 +88,74 @@ function App() {
             </div>
           )}
         </div>
+        
+        {/* "More" button - only shown if there are more than 6 items and not all are displayed */}
+        {hasMoreItems && !showAllItems && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAllItems(true)}
+              className="group relative px-6 py-3 rounded-full flex items-center justify-center transition-all duration-300 overflow-hidden hover:scale-105"
+            >
+              {/* Button gradient border */}
+              <span
+                className="absolute inset-0 rounded-full z-0"
+                style={{
+                  background: "linear-gradient(145deg, rgba(130, 100, 255, 0.6), rgba(70, 130, 255, 0.4))",
+                  opacity: 0.6,
+                }}
+              ></span>
+              
+              {/* Button inner background */}
+              <span
+                className="absolute inset-0 rounded-full"
+                style={{
+                  margin: "2px",
+                  background: "linear-gradient(145deg, rgba(25, 25, 35, 0.8), rgba(10, 10, 15, 0.95))",
+                  boxShadow: "inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 8px -2px rgba(0, 0, 0, 0.6)",
+                }}
+              ></span>
+              
+              {/* Button text */}
+              <span className="relative z-10 flex items-center font-medium text-white">
+                Show More ({filteredTools.length - 6} more)
+              </span>
+            </button>
+          </div>
+        )}
+        
+        {/* Show Less button - only shown when all items are displayed and there are more than 6 */}
+        {hasMoreItems && showAllItems && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowAllItems(false)}
+              className="group relative px-6 py-3 rounded-full flex items-center justify-center transition-all duration-300 overflow-hidden hover:scale-105"
+            >
+              {/* Button gradient border */}
+              <span
+                className="absolute inset-0 rounded-full z-0"
+                style={{
+                  background: "linear-gradient(145deg, rgba(130, 100, 255, 0.6), rgba(70, 130, 255, 0.4))",
+                  opacity: 0.6,
+                }}
+              ></span>
+              
+              {/* Button inner background */}
+              <span
+                className="absolute inset-0 rounded-full"
+                style={{
+                  margin: "2px",
+                  background: "linear-gradient(145deg, rgba(25, 25, 35, 0.8), rgba(10, 10, 15, 0.95))",
+                  boxShadow: "inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 2px 8px -2px rgba(0, 0, 0, 0.6)",
+                }}
+              ></span>
+              
+              {/* Button text */}
+              <span className="relative z-10 flex items-center font-medium text-white">
+                Show Less
+              </span>
+            </button>
+          </div>
+        )}
         
         <SubscribeForm />
       </main>
