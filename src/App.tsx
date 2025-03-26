@@ -31,7 +31,7 @@ function App() {
     <DottedBackground>
       <Header />
 
-      <main className="max-w-6xl mx-auto py-8 px-6">
+      <main className="max-w-6xl mx-auto py-4 sm:py-6 md:py-8 px-6">
         <HeroSection />
         
         <CategoryFilter 

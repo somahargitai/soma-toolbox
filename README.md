@@ -17,7 +17,7 @@ A curated collection of useful tools and resources, inspired by Jason Murray's w
 
 ## Project Structure
 
-```
+```bash
 soma_toolbox/
 ├── public/           # Static assets
 │   └── images/       # Tool thumbnail images

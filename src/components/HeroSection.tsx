@@ -4,7 +4,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="text-center py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl mb-6  text-center sm:text-left md:text-center mt-10">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl mb-6  text-center sm:text-left md:text-center">
           Welcome to Soma's Toolbox
         </h1>
         <p className="text-xl text-gray-300 mb-10   text-left md:text-center">
