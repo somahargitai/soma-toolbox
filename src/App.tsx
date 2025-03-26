@@ -12,14 +12,30 @@ import './styles/notion-cards.css'
 
 function App() {
   const [activeFilter, setActiveFilter] = useState<string>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
   
-  // Filter tools based on the active category
+  // Filter tools based on the active category and search term
   const filteredTools = useMemo(() => {
-    if (activeFilter === 'all') {
-      return tools;
+    let filtered = tools;
+    
+    // Apply category filter
+    if (activeFilter !== 'all') {
+      filtered = filtered.filter(tool => tool.categories.includes(activeFilter));
     }
-    return tools.filter(tool => tool.categories.includes(activeFilter));
-  }, [activeFilter]);
+    
+    // Apply search term filter only if there's a non-empty search term
+    if (searchTerm && searchTerm.trim() !== '') {
+      const lowercaseSearch = searchTerm.toLowerCase().trim();
+      filtered = filtered.filter(
+        tool => 
+          tool.name.toLowerCase().includes(lowercaseSearch) || 
+          tool.description.toLowerCase().includes(lowercaseSearch) ||
+          tool.categories.some(category => category.toLowerCase().includes(lowercaseSearch))
+      );
+    }
+    
+    return filtered;
+  }, [activeFilter, searchTerm]);
   
   // Get unique categories from all tools
   const categories = useMemo(() => {
@@ -28,7 +44,7 @@ function App() {
   }, []);
 
   return (
-    <DottedBackground>
+    <DottedBackground> 
       <Header />
 
       <main className="max-w-6xl mx-auto py-4 sm:py-6 md:py-8 px-6">
@@ -38,13 +54,29 @@ function App() {
           categories={categories}
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
+          onSearchChange={setSearchTerm}
         />
 
         {/* Tool Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredTools.map((tool: Tool) => (
-            <ToolCard key={tool.id} tool={tool} />
-          ))}
+          {filteredTools.length > 0 ? (
+            filteredTools.map((tool: Tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))
+          ) : (
+            <div className="col-span-full text-center py-10">
+              <p className="text-xl">No tools found matching your search criteria.</p>
+              <button 
+                onClick={() => {
+                  setActiveFilter('all');
+                  setSearchTerm('');
+                }}
+                className="mt-4 px-4 py-2 bg-white text-black rounded-full hover:bg-opacity-90"
+              >
+                Clear filters
+              </button>
+            </div>
+          )}
         </div>
         
         <SubscribeForm />

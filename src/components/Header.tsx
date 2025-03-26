@@ -2,9 +2,14 @@ import React, { useState } from "react";
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
   };
 
   return (
@@ -150,9 +155,57 @@ const Header: React.FC = () => {
                   </a>
                 </li>
               </ul>
-              <button className="px-3 py-1 rounded-md text-md font-medium">
+              
+              <button className="px-3 py-1 rounded-md text-md font-medium mr-3">
                 Get Updates
               </button>
+              
+              {/* Custom Search Component */}
+              <div className="flex items-center ml-4">
+                {searchOpen ? (
+                  <div className="flex items-center">
+                    <div className="relative flex items-center">
+                      <input 
+                        type="text" 
+                        placeholder="Search..." 
+                        className="bg-black bg-opacity-20 text-white px-4 py-1 rounded-l-md w-0 focus:outline-none transition-all duration-300 ease-in-out"
+                        style={{
+                          width: searchOpen ? '200px' : '0',
+                          padding: searchOpen ? '0.25rem 1rem' : '0',
+                          border: searchOpen ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+                          backdropFilter: 'blur(4px)'
+                        }}
+                        autoFocus={searchOpen}
+                      />
+                      <button className="bg-white text-black px-3 py-1 rounded-r-md flex items-center">
+                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        Go
+                      </button>
+                    </div>
+                    <button 
+                      onClick={toggleSearch}
+                      className="ml-2 px-3 py-1 rounded-md text-md font-medium flex items-center"
+                    >
+                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                ) : (
+                  <button 
+                    onClick={toggleSearch}
+                    className="px-3 py-1 rounded-md text-md font-medium flex items-center transition-all duration-300"
+                  >
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    Custom Search
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </nav>

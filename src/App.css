@@ -1,1 +1,96 @@
 /* Custom component styles can be added here if needed */
+
+/* Rainbow Gradient Animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Slow pulse animation for depth effect */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Add spin animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+/* Rainbow border effect for button */
+.rainbow-button-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 128) 0%,
+    rgb(255, 0, 0) 14%,
+    rgb(255, 128, 0) 28%,
+    rgb(255, 255, 0) 42%,
+    rgb(0, 255, 0) 56%,
+    rgb(0, 128, 255) 70%,
+    rgb(128, 0, 255) 84%,
+    rgb(255, 0, 128) 100%
+  );
+  background-size: 300% auto;
+  animation: gradient 3s linear infinite;
+  padding: 2px;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Add a glow effect */
+.rainbow-button-glow {
+  filter: blur(8px);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.rainbow-button-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  border-radius: inherit;
+  filter: blur(4px);
+}
+
+/* Text gradient styles */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #a5b4fc, #ffffff);
+}
