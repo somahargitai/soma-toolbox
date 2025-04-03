@@ -7,6 +7,8 @@ export interface Tool {
   categories: string[];
 }
 
+// Note: Image paths are relative to the public directory and will be properly 
+// resolved at runtime using getAssetPath utility to account for base path
 export const tools: Tool[] = [
   {
     id: '1',

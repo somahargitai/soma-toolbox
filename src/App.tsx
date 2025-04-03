@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { tools, Tool } from './data/tools'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,6 +7,7 @@ import CategoryFilter from './components/CategoryFilter'
 import DottedBackground from './components/DottedBackground'
 import SubscribeForm from './components/SubscribeForm'
 import HeroSection from './components/HeroSection'
+import { getAssetPath } from './utils/path'
 import './App.css'
 import './styles/notion-cards.css'
 
@@ -14,6 +15,15 @@ function App() {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [showAllItems, setShowAllItems] = useState<boolean>(false);
+  
+  // Log base path for debugging
+  useEffect(() => {
+    console.log('Base path test:', {
+      placeholder: getAssetPath('/images/tools/placeholder.svg'),
+      highQualityImage: getAssetPath('/images/tools/high-quality-image.avif'),
+      testImage: getAssetPath('/images/tools/test.png')
+    });
+  }, []);
   
   // Filter tools based on the active category and search term
   const filteredTools = useMemo(() => {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Tool } from "../data/tools";
+import Image from "./Image";
 
 interface ToolCardProps {
   tool: Tool;
@@ -21,12 +22,12 @@ const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
         className="notion-link notion-collection-card__anchor"
       >
         {/* Tool Card Image */}
-        <img
+        <Image
           src={imageError ? "/images/tools/placeholder.svg" : tool.image}
           alt={tool.name}
           loading="lazy"
-          width="780" 
-          height="280"
+          width={780}
+          height={280}
           className="notion-collection-card__cover medium"
           style={{ 
             color: "transparent", 
