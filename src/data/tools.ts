@@ -15,7 +15,7 @@ export const tools: Tool[] = [
     name: 'Midjourney',
     description: 'AI image generation tool using text prompts',
     url: 'https://www.midjourney.com/',
-    image: '/images/tools/midjourney.png',
+    image: '/images/tools/midjourney-1.png',
     categories: ['ai', 'design'],
   },
   {
@@ -23,7 +23,7 @@ export const tools: Tool[] = [
     name: 'Figma',
     description: 'Design, prototype, and collaborate all in the browser',
     url: 'https://www.figma.com/',
-    image: '/images/tools/figma.png',
+    image: '/images/tools/figma-2.png',
     categories: ['design', 'productivity'],
   },
   {
@@ -31,7 +31,7 @@ export const tools: Tool[] = [
     name: 'GitHub Copilot',
     description: 'AI pair programmer that helps you write better code',
     url: 'https://github.com/features/copilot',
-    image: '/images/tools/github-copilot.png',
+    image: '/images/tools/github-copilot-3.png',
     categories: ['ai', 'development'],
   },
   {
@@ -39,7 +39,7 @@ export const tools: Tool[] = [
     name: 'VS Code',
     description: 'Free source-code editor made by Microsoft',
     url: 'https://code.visualstudio.com/',
-    image: '/images/tools/vscode.png',
+    image: '/images/tools/vs-code-4.png',
     categories: ['development', 'productivity'],
   },
   {
@@ -47,7 +47,7 @@ export const tools: Tool[] = [
     name: 'Notion',
     description: 'All-in-one workspace for notes, tasks, wikis, and databases',
     url: 'https://www.notion.so/',
-    image: '/images/tools/notion.png',
+    image: '/images/tools/notion-5.png',
     categories: ['productivity'],
   },
   {
@@ -55,7 +55,7 @@ export const tools: Tool[] = [
     name: 'ChatGPT',
     description: 'Conversational AI model that can be used for various tasks',
     url: 'https://chat.openai.com/',
-    image: '/images/tools/chatgpt.png',
+    image: '/images/tools/chatgpt-6.png',
     categories: ['ai'],
   },
   {
@@ -63,7 +63,7 @@ export const tools: Tool[] = [
     name: 'High Quality Image',
     description: 'High quality image with custom parameters',
     url: 'https://example.com/',
-    image: '/images/tools/high-quality-image.avif',
+    image: '/images/tools/high-quality-image-7.png',
     categories: ['design', 'resources'],
   },
   {
@@ -71,7 +71,7 @@ export const tools: Tool[] = [
     name: 'Canva',
     description: 'Graphic design platform for creating visual content',
     url: 'https://www.canva.com/',
-    image: '/images/tools/canva.png',
+    image: '/images/tools/canva-8.png',
     categories: ['design', 'productivity'],
   },
   {
@@ -79,7 +79,7 @@ export const tools: Tool[] = [
     name: 'Midjourney',
     description: 'AI art generator that creates images from text descriptions',
     url: 'https://www.midjourney.com/',
-    image: '/images/tools/midjourney.png',
+    image: '/images/tools/midjourney-9.png',
     categories: ['ai', 'design'],
   },
   {
@@ -87,7 +87,7 @@ export const tools: Tool[] = [
     name: 'Trello',
     description: 'Visual tool for organizing work and managing projects',
     url: 'https://trello.com/',
-    image: '/images/tools/trello.png',
+    image: '/images/tools/trello-10.png',
     categories: ['productivity'],
   },
   {
@@ -95,7 +95,7 @@ export const tools: Tool[] = [
     name: 'Vercel',
     description: 'Platform for frontend frameworks and static sites',
     url: 'https://vercel.com/',
-    image: '/images/tools/vercel.png',
+    image: '/images/tools/vercel-11.png',
     categories: ['development', 'hosting'],
   },
   {
@@ -103,7 +103,7 @@ export const tools: Tool[] = [
     name: 'Stripe',
     description: 'Payment processing platform for internet businesses',
     url: 'https://stripe.com/',
-    image: '/images/tools/stripe.png',
+    image: '/images/tools/stripe-12.png',
     categories: ['development', 'business'],
   },
   {
@@ -111,7 +111,7 @@ export const tools: Tool[] = [
     name: 'Airtable',
     description: 'Part spreadsheet, part database, and entirely flexible',
     url: 'https://airtable.com/',
-    image: '/images/tools/airtable.png',
+    image: '/images/tools/airtable-13.png',
     categories: ['productivity', 'business'],
   },
   {
@@ -119,7 +119,7 @@ export const tools: Tool[] = [
     name: 'Webflow',
     description: 'Visual web design platform for professionals',
     url: 'https://webflow.com/',
-    image: '/images/tools/webflow.png',
+    image: '/images/tools/webflow-14.png',
     categories: ['design', 'development'],
   },
   {
@@ -127,7 +127,7 @@ export const tools: Tool[] = [
     name: 'Framer',
     description: 'Interactive design tool for creating responsive websites',
     url: 'https://www.framer.com/',
-    image: '/images/tools/framer.png',
+    image: '/images/tools/framer-15.png',
     categories: ['design', 'development'],
   },
   {
@@ -135,7 +135,7 @@ export const tools: Tool[] = [
     name: 'Supabase',
     description: 'Open source Firebase alternative with PostgreSQL',
     url: 'https://supabase.com/',
-    image: '/images/tools/supabase.png',
+    image: '/images/tools/supabase-16.png',
     categories: ['development', 'database'],
   },
   {
@@ -143,7 +143,7 @@ export const tools: Tool[] = [
     name: 'Tailwind CSS',
     description: 'Utility-first CSS framework for rapid UI development',
     url: 'https://tailwindcss.com/',
-    image: '/images/tools/tailwind.png',
+    image: '/images/tools/tailwind-css-17.png',
     categories: ['development', 'design'],
   },
   {
@@ -151,7 +151,7 @@ export const tools: Tool[] = [
     name: 'Stable Diffusion',
     description: 'Open-source AI art generator',
     url: 'https://stability.ai/',
-    image: '/images/tools/stable-diffusion.png',
+    image: '/images/tools/stable-diffusion-18.png',
     categories: ['ai', 'design'],
   },
   {
@@ -159,7 +159,7 @@ export const tools: Tool[] = [
     name: 'Slack',
     description: 'Business communication platform for teams',
     url: 'https://slack.com/',
-    image: '/images/tools/slack.png',
+    image: '/images/tools/slack-19.png',
     categories: ['productivity', 'communication'],
   },
   {
@@ -167,7 +167,7 @@ export const tools: Tool[] = [
     name: 'Asana',
     description: 'Work management platform for teams',
     url: 'https://asana.com/',
-    image: '/images/tools/asana.png',
+    image: '/images/tools/asana-20.png',
     categories: ['productivity', 'business'],
   },
   {
@@ -175,7 +175,7 @@ export const tools: Tool[] = [
     name: 'Netlify',
     description: 'Platform for modern web projects deployment',
     url: 'https://www.netlify.com/',
-    image: '/images/tools/netlify.png',
+    image: '/images/tools/netlify-21.png',
     categories: ['development', 'hosting'],
   },
   {
@@ -183,7 +183,7 @@ export const tools: Tool[] = [
     name: 'Miro',
     description: 'Online collaborative whiteboard platform',
     url: 'https://miro.com/',
-    image: '/images/tools/miro.png',
+    image: '/images/tools/miro-22.png',
     categories: ['productivity', 'collaboration'],
   },
   {
@@ -191,7 +191,7 @@ export const tools: Tool[] = [
     name: 'Notion AI',
     description: 'AI writing assistant integrated with Notion',
     url: 'https://www.notion.so/product/ai',
-    image: '/images/tools/notion-ai.png',
+    image: '/images/tools/notion-ai-23.png',
     categories: ['ai', 'productivity'],
   },
   {
@@ -199,7 +199,7 @@ export const tools: Tool[] = [
     name: 'Loom',
     description: 'Video messaging for work',
     url: 'https://www.loom.com/',
-    image: '/images/tools/loom.png',
+    image: '/images/tools/loom-24.png',
     categories: ['productivity', 'communication'],
   },
   {
@@ -207,7 +207,7 @@ export const tools: Tool[] = [
     name: 'Unsplash',
     description: 'Beautiful free images and photos',
     url: 'https://unsplash.com/',
-    image: '/images/tools/unsplash.png',
+    image: '/images/tools/unsplash-25.png',
     categories: ['resources', 'design'],
   },
   {
@@ -215,7 +215,7 @@ export const tools: Tool[] = [
     name: 'Hugging Face',
     description: 'Platform for building, training and deploying ML models',
     url: 'https://huggingface.co/',
-    image: '/images/tools/huggingface.png',
+    image: '/images/tools/hugging-face-26.png',
     categories: ['ai', 'development'],
   },
   {
@@ -223,7 +223,7 @@ export const tools: Tool[] = [
     name: 'Dribbble',
     description: 'Community of designers sharing their work',
     url: 'https://dribbble.com/',
-    image: '/images/tools/dribbble.png',
+    image: '/images/tools/dribbble-27.png',
     categories: ['design', 'resources'],
   },
   {
@@ -231,7 +231,7 @@ export const tools: Tool[] = [
     name: 'Refactoring Guru',
     description: 'Educational resource on design patterns and refactoring techniques',
     url: 'https://refactoring.guru/design-patterns/behavioral-patterns',
-    image: '/images/tools/refactoring-guru.png',
+    image: '/images/tools/refactoring-guru-28.png',
     categories: ['development', 'education', 'resources'],
   },
   {
@@ -239,7 +239,7 @@ export const tools: Tool[] = [
     name: 'Tilegrams',
     description: 'Tool for creating map visualizations where regions are represented as tiles',
     url: 'https://pitchinteractiveinc.github.io/tilegrams/',
-    image: '/images/tools/tilegrams.png',
+    image: '/images/tools/tilegrams-29.png',
     categories: ['design', 'data-visualization', 'resources'],
   },
   {
@@ -247,7 +247,7 @@ export const tools: Tool[] = [
     name: 'Happy Hues',
     description: 'Curated color palettes for web design and UI projects',
     url: 'https://www.happyhues.co/palettes/13',
-    image: '/images/tools/happy-hues.png',
+    image: '/images/tools/happy-hues-30.png',
     categories: ['design', 'resources', 'color'],
   },
   {
@@ -255,7 +255,7 @@ export const tools: Tool[] = [
     name: 'FontTools',
     description: 'Library for manipulating fonts, written in Python',
     url: 'https://fonttools.readthedocs.io/en/latest/',
-    image: '/images/tools/fonttools.png',
+    image: '/images/tools/fonttools-31.png',
     categories: ['development', 'design', 'typography'],
   },
   {
@@ -263,7 +263,7 @@ export const tools: Tool[] = [
     name: 'Free Faces',
     description: 'Gallery of free and open-source typefaces',
     url: 'https://www.freefaces.gallery/',
-    image: '/images/tools/free-faces.png',
+    image: '/images/tools/free-faces-32.png',
     categories: ['design', 'typography', 'resources'],
   },
   {
@@ -271,7 +271,7 @@ export const tools: Tool[] = [
     name: 'Carbone Tipografía',
     description: 'Typography courses and workshops based in Buenos Aires',
     url: 'https://carbonetipografia.ar/en/blog-en/',
-    image: '/images/tools/carbone-tipografia.png',
+    image: '/images/tools/carbone-tipograf-a-33.png',
     categories: ['design', 'typography', 'education'],
   },
 
@@ -280,7 +280,7 @@ export const tools: Tool[] = [
     name: 'All Things Letters, Chris Campe',
     description: 'Educational resource for typography and lettering enthusiasts',
     url: 'https://www.allthingsletters.com/start/',
-    image: '/images/tools/all-things-letters.png',
+    image: '/images/tools/all-things-letters-chris-campe-34.png',
     categories: ['design', 'typography', 'education', 'resources'],
   },
   {
@@ -288,7 +288,7 @@ export const tools: Tool[] = [
     name: 'Amélie Bonet',
     description: 'Portfolio of a graphic designer and type designer showcasing typography projects',
     url: 'https://ameliebonet.com/',
-    image: '/images/tools/amelie-bonet.png',
+    image: '/images/tools/am-lie-bonet-35.png',
     categories: ['design', 'typography', 'portfolio'],
   },
   {
@@ -296,7 +296,7 @@ export const tools: Tool[] = [
     name: 'Hungarumlaut',
     description: 'Type foundry specializing in contemporary typefaces with Central European character support',
     url: 'https://hungarumlaut.com/info',
-    image: '/images/tools/hungarumlaut.png',
+    image: '/images/tools/hungarumlaut-36.png',
     categories: ['design', 'typography', 'resources'],
   },
   {
@@ -304,7 +304,7 @@ export const tools: Tool[] = [
     name: 'Adam Katyi',
     description: 'Type designer and typographer with a focus on contemporary typefaces',
     url: 'https://adamkatyi.com/',
-    image: '/images/tools/adam-katyi.png',
+    image: '/images/tools/adam-katyi-37.png',
     categories: ['design', 'typography', 'portfolio'],
   },
   {
@@ -312,7 +312,7 @@ export const tools: Tool[] = [
     name: 'Setup Type',
     description: 'Independent type foundry creating contemporary typefaces',
     url: 'https://www.setuptype.com/info',
-    image: '/images/tools/setup-type.png',
+    image: '/images/tools/setup-type-38.png',
     categories: ['design', 'typography', 'resources'],
   },
   {
@@ -320,7 +320,7 @@ export const tools: Tool[] = [
     name: 'TypeJockeys',
     description: 'Independent type foundry creating high-quality typefaces with a focus on craftsmanship',
     url: 'https://typejockeys.com/',
-    image: '/images/tools/typejockeys.png',
+    image: '/images/tools/typejockeys-39.png',
     categories: ['design', 'typography', 'resources'],
   },
   {
@@ -328,7 +328,7 @@ export const tools: Tool[] = [
     name: 'ESAD Type',
     description: 'Post-graduate program in typeface design at École Supérieure d\'Art et de Design d\'Amiens',
     url: 'https://esad-amiens.design/en/esadtype/post-diplome',
-    image: '/images/tools/esad-type.png',
+    image: '/images/tools/esad-type-40.png',
     categories: ['design', 'typography', 'education'],
   },
   {
@@ -336,7 +336,7 @@ export const tools: Tool[] = [
     name: 'Lineto',
     description: 'Swiss type foundry offering high-quality contemporary typefaces for digital and print use',
     url: 'https://lineto.com/',
-    image: '/images/tools/lineto.png',
+    image: '/images/tools/lineto-41.png',
     categories: ['design', 'typography', 'resources'],
   },
   {
@@ -352,7 +352,7 @@ export const tools: Tool[] = [
     name: 'Reading Typography',
     description: 'Typography and Graphic Communication department at the University of Reading offering specialized short courses in typeface design',
     url: 'https://www.reading.ac.uk/typography/short-courses/tdi-course',
-    image: '/images/tools/reading-typography.png',
+    image: '/images/tools/reading-typography-43.png',
     categories: ['design', 'typography', 'education'],
   },
   {
@@ -360,7 +360,7 @@ export const tools: Tool[] = [
     name: 'I Love Typography - Glyphs Python Crash Course',
     description: 'A comprehensive crash course on Python scripting for the Glyphs font editor, helping type designers automate and enhance their workflow',
     url: 'https://ilovetypography.com/academy/glyphs-python-crash-course/',
-    image: '/images/tools/ilt-python-course.png',
+    image: '/images/tools/i-love-typography-glyphs-python-crash-course-44.png',
     categories: ['design', 'typography', 'education', 'development'],
   },
   {
@@ -368,7 +368,7 @@ export const tools: Tool[] = [
     name: 'Type Electives',
     description: 'Online platform offering specialized courses in typography, type design, and lettering taught by industry professionals',
     url: 'https://www.typeelectives.com/courses',
-    image: '/images/tools/type-electives.png',
+    image: '/images/tools/type-electives-45.png',
     categories: ['design', 'typography', 'education'],
   },
   {
@@ -376,7 +376,7 @@ export const tools: Tool[] = [
     name: 'Type West Online',
     description: 'Online typography courses from Letterform Archive, offering in-depth education on type design and typography fundamentals',
     url: 'https://letterformarchive.org/type-west-online/',
-    image: '/images/tools/type-west-online.png',
+    image: '/images/tools/type-west-online-46.png',
     categories: ['design', 'typography', 'education'],
   },
   {
@@ -384,7 +384,7 @@ export const tools: Tool[] = [
     name: 'Cooper Union Typography & Calligraphy',
     description: 'Continuing education courses in typography and calligraphy at The Cooper Union, offering hands-on instruction in letterform design and typographic principles',
     url: 'https://cooper.edu/continuing-education/courses/typography-calligraphy',
-    image: '/images/tools/cooper-union-typography.png',
+    image: '/images/tools/cooper-union-typography-calligraphy-47.png',
     categories: ['design', 'typography', 'education', 'calligraphy'],
   },
   {
@@ -392,7 +392,7 @@ export const tools: Tool[] = [
     name: 'Plantin Institute Expert Class Type Design',
     description: 'Specialized one-year program in type design at the Plantin Institute of Typography in Antwerp, focusing on professional typeface development',
     url: 'https://plantininstituut.be/opleiding/expert-class-type-design/',
-    image: '/images/tools/plantin-institute.png',
+    image: '/images/tools/plantin-institute-expert-class-type-design-48.png',
     categories: ['design', 'typography', 'education'],
   },
   {
@@ -400,7 +400,7 @@ export const tools: Tool[] = [
     name: 'Font Gauntlet',
     description: 'Interactive web tool for testing and comparing variable fonts, allowing designers to explore the full range of a font\'s design space',
     url: 'https://fontgauntlet.com/',
-    image: '/images/tools/font-gauntlet.png',
+    image: '/images/tools/font-gauntlet-49.png',
     categories: ['design', 'typography', 'tools'],
   },
   {
@@ -408,7 +408,7 @@ export const tools: Tool[] = [
     name: 'Type Everything',
     description: 'A curated blog showcasing beautiful typography, lettering, and type design from around the world, serving as inspiration for designers and typography enthusiasts',
     url: 'https://typeverything.com/',
-    image: '/images/tools/type-everything.png',
+    image: '/images/tools/type-everything-50.png',
     categories: ['design', 'typography', 'inspiration', 'resources'],
   },
   {
@@ -416,7 +416,7 @@ export const tools: Tool[] = [
     name: 'Typonym',
     description: 'Interactive reference tool for identifying and learning about typographic features and characters, helping designers and typography enthusiasts understand the anatomy of letterforms',
     url: 'https://typonym.xyz/about.php',
-    image: '/images/tools/typonym.png',
+    image: '/images/tools/typonym-51.png',
     categories: ['design', 'typography', 'education', 'resources'],
   },
   {
@@ -424,7 +424,7 @@ export const tools: Tool[] = [
     name: 'Evan on Earth',
     description: 'Personal website and portfolio of designer Evan Collins, showcasing creative projects and design work with a unique aesthetic approach',
     url: 'https://www.evanonearth.net/',
-    image: '/images/tools/evan-on-earth.png',
+    image: '/images/tools/evan-on-earth-52.png',
     categories: ['design', 'portfolio', 'inspiration'],
   },
   {
@@ -432,7 +432,7 @@ export const tools: Tool[] = [
     name: 'Domestika: Animated Typography',
     description: 'Online course teaching motion design for dynamic typographic compositions, helping designers create engaging animated typography for various digital media projects',
     url: 'https://www.domestika.org/en/courses/2253-animated-typography-motion-design-for-dynamic-compositions/course',
-    image: '/images/tools/domestika-animated-typography.png',
+    image: '/images/tools/domestika-animated-typography-53.png',
     categories: ['design', 'typography', 'animation', 'education'],
   },
   {
@@ -440,7 +440,7 @@ export const tools: Tool[] = [
     name: 'DrawBot',
     description: 'Open-source application for creating generative graphics and typography using Python, popular among type designers for creating specimens and testing fonts',
     url: 'https://www.drawbot.com/',
-    image: '/images/tools/drawbot.png',
+    image: '/images/tools/drawbot-54.png',
     categories: ['design', 'typography', 'development', 'tools'],
   },
   {
@@ -448,7 +448,7 @@ export const tools: Tool[] = [
     name: 'TTX (FontTools)',
     description: 'Command-line tool from the FontTools library that converts OpenType and TrueType fonts to and from XML, allowing for detailed inspection and modification of font files',
     url: 'https://fonttools.readthedocs.io/en/latest/ttx.html',
-    image: '/images/tools/ttx-fonttools.png',
+    image: '/images/tools/ttx-fonttools-55.png',
     categories: ['development', 'typography', 'tools'],
   },
 

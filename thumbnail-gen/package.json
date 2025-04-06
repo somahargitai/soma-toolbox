@@ -1,0 +1,24 @@
+{
+  "name": "thumbnail-generator",
+  "version": "1.0.0",
+  "description": "Script to generate website thumbnails locally using Puppeteer",
+  "main": "generatenow.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx generatenow.ts",
+    "test": "NODE_ENV=test tsx generatenow.ts",
+    "generate": "tsx generatenow.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^24.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  }
+}
