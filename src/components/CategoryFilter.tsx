@@ -18,6 +18,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onCustomFilterChange,
   onSearchChange,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [inputFocused, setInputFocused] = useState(false);
@@ -26,9 +27,6 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
     useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const recommendationsRef = useRef<HTMLDivElement>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkMobile = /Mobi|Android/i.test(navigator.userAgent);
