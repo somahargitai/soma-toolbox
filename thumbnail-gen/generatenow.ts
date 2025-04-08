@@ -367,6 +367,7 @@ const updateToolsFile = (toolId: string, newImagePath: string): boolean => {
 const processTools = async (toolIds: string[]): Promise<void> => {
   let successCount = 0;
   let failCount = 0;
+  let skipCount = 0;
   
   // Get the full list of tools to work with
   const allTools = process.env.NODE_ENV === 'test' ? testTools : tools;
@@ -381,17 +382,67 @@ const processTools = async (toolIds: string[]): Promise<void> => {
     process.exit(1);
   }
   
-  console.log(`Found ${toolsToProcess.length} tools to process...`);
+  // Get the target directory path
+  const targetDir = path.resolve(__dirname, '../public/images/tools');
   
-  // Process each tool
-  for (const tool of toolsToProcess) {
+  // Check if target directory exists, create if it doesn't
+  if (!fs.existsSync(targetDir)) {
+    console.log(`Creating target directory: ${targetDir}`);
+    fs.mkdirSync(targetDir, { recursive: true });
+  }
+  
+  // Get list of existing image files
+  const existingFiles = fs.readdirSync(targetDir)
+    .filter(file => file.endsWith('.png'));
+
+  console.log('\n=== Initial Analysis ===');
+  console.log(`Found ${toolsToProcess.length} tools in tools.ts list`);
+  console.log(`Found ${existingFiles.length} existing image files\n`);
+
+  // Create a map of existing files for quick lookup
+  const existingFileMap = new Map(
+    existingFiles.map(file => {
+      const baseName = file.replace('.png', '');
+      return [baseName, file];
+    })
+  );
+
+  // Filter tools that need processing (in list but no image)
+  const toolsNeedingScreenshots = toolsToProcess.filter(tool => {
+    const expectedFileName = createValidFilename(tool.name, tool.id);
+    const hasImage = existingFileMap.has(expectedFileName);
+    
+    if (hasImage) {
+      console.log(`✓ ${tool.name} (ID: ${tool.id}) - Image exists, will skip`);
+      skipCount++;
+      return false;
+    } else {
+      console.log(`+ ${tool.name} (ID: ${tool.id}) - Image missing, will process`);
+      return true;
+    }
+  });
+
+  // Log files that exist but aren't in tools list
+  existingFiles.forEach(file => {
+    const baseName = file.replace('.png', '');
+    const isInToolsList = toolsToProcess.some(tool => 
+      createValidFilename(tool.name, tool.id) === baseName
+    );
+    if (!isInToolsList) {
+      console.log(`! ${file} - File exists but tool not in tools.ts list`);
+    }
+  });
+
+  console.log(`\nFound ${toolsNeedingScreenshots.length} tools that need screenshots...\n`);
+  
+  // Process each tool that needs a screenshot
+  for (const tool of toolsNeedingScreenshots) {
     try {
       console.log(`\nProcessing: ${tool.name} (ID: ${tool.id})`);
       
-      // Create a better filename with tool name
       const fileBaseName = createValidFilename(tool.name, tool.id);
       const outputFileName = `${fileBaseName}.png`;
-      const outputPath = path.resolve(__dirname, '../public/images/tools', outputFileName);
+      const outputPath = path.resolve(targetDir, outputFileName);
       
       // Generate the screenshot
       const success = await generateScreenshot(tool.url, outputPath, tool.name);
@@ -421,7 +472,9 @@ const processTools = async (toolIds: string[]): Promise<void> => {
   console.log(`\n===== Summary =====`);
   console.log(`Successful: ${successCount}`);
   console.log(`Failed: ${failCount}`);
-  console.log(`Total: ${toolsToProcess.length}`);
+  console.log(`Skipped (already exists): ${skipCount}`);
+  console.log(`Total tools in list: ${toolsToProcess.length}`);
+  console.log(`Total files in directory: ${existingFiles.length}`);
 };
 
 // Get tool IDs from command line arguments
