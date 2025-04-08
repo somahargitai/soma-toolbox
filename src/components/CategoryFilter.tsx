@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import HorizontalScroll from "./HorizontalScroll";
 
 interface CategoryFilterProps {
   categories: string[];
@@ -23,8 +24,11 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   const [recommendations, setRecommendations] = useState<string[]>([]);
   const [selectedRecommendationIndex, setSelectedRecommendationIndex] =
     useState(-1);
+  const [showLeftScroll, setShowLeftScroll] = useState(false);
+  const [showRightScroll, setShowRightScroll] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const recommendationsRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Focus input when search opens
   useEffect(() => {
@@ -48,6 +52,39 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
       setRecommendations([]);
     }
   }, [searchTerm, categories, customFilters]);
+
+  // Update scroll button visibility
+  useEffect(() => {
+    const updateScrollButtons = () => {
+      const container = scrollContainerRef.current;
+      if (container) {
+        const hasOverflow = container.scrollWidth > container.clientWidth;
+        const isDesktop = window.innerWidth >= 768;
+        
+        if (hasOverflow && isDesktop) {
+          setShowLeftScroll(container.scrollLeft > 0);
+          setShowRightScroll(
+            container.scrollLeft < container.scrollWidth - container.clientWidth
+          );
+        } else {
+          setShowLeftScroll(false);
+          setShowRightScroll(false);
+        }
+      }
+    };
+
+    // Update on load and resize
+    updateScrollButtons();
+    window.addEventListener('resize', updateScrollButtons);
+    
+    // Update on scroll
+    scrollContainerRef.current?.addEventListener('scroll', updateScrollButtons);
+
+    return () => {
+      window.removeEventListener('resize', updateScrollButtons);
+      scrollContainerRef.current?.removeEventListener('scroll', updateScrollButtons);
+    };
+  }, []);
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
@@ -118,8 +155,8 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
         Categories
       </h2>
       <div className="flex flex-col gap-4">
-        {/* Category Filters - Desktop Only - Always visible */}
-        <div className="hidden md:flex flex-wrap gap-2 justify-center">
+        {/* Category Filters - Always visible and horizontally scrollable */}
+        <HorizontalScroll>
           {categories.map((filter) => (
             <button
               key={filter}
@@ -139,7 +176,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
             </button>
           ))}
-        </div>
+        </HorizontalScroll>
 
         {/* Search Section */}
         {searchOpen ? (

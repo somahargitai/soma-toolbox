@@ -25,7 +25,7 @@ export const tools: Tool[] = [
     description: "Archive of typography and lettering in modern graphic design",
     url: "https://fontsinuse.com/",
     image: "/images/tools/fonts-in-use-10.png",
-    categories: ["typography", "design", "portfolio", "fonts"],
+    categories: ["type design", "portfolio", "fonts"],
   },
   {
     id: "11",
@@ -73,7 +73,7 @@ export const tools: Tool[] = [
     description: "Utility-first CSS framework for rapid UI development",
     url: "https://tailwindcss.com/",
     image: "/images/tools/tailwind-css-17.png",
-    categories: ["development", "design"],
+    categories: ["development", "graphic design"],
   },
   {
     id: "18",
@@ -81,7 +81,7 @@ export const tools: Tool[] = [
     description: "Open-source AI art generator",
     url: "https://stability.ai/",
     image: "/images/tools/stable-diffusion-18.png",
-    categories: ["artificial intelligence", "design"],
+    categories: ["artificial intelligence", "graphic design"],
   },
   {
     id: "22",
@@ -105,7 +105,7 @@ export const tools: Tool[] = [
     description: "Beautiful free images and photos",
     url: "https://unsplash.com/",
     image: "/images/tools/unsplash-25.png",
-    categories: ["resources", "design"],
+    categories: ["stock photos", "graphic design"],
   },
   {
     id: "26",
@@ -121,7 +121,7 @@ export const tools: Tool[] = [
     description: "Community of designers sharing their work",
     url: "https://dribbble.com/",
     image: "/images/tools/dribbble-27.png",
-    categories: ["design", "resources"],
+    categories: ["graphic design"],
   },
   {
     id: "28",
@@ -130,7 +130,7 @@ export const tools: Tool[] = [
       "Educational resource on design patterns and refactoring techniques",
     url: "https://refactoring.guru/design-patterns/behavioral-patterns",
     image: "/images/tools/refactoring-guru-28.png",
-    categories: ["development", "education", "resources", "design patterns"],
+    categories: ["development", "education", "design patterns"],
   },
   {
     id: "29",
@@ -140,11 +140,11 @@ export const tools: Tool[] = [
     url: "https://pitchinteractiveinc.github.io/tilegrams/",
     image: "/images/tools/tilegrams-29.png",
     categories: [
-      "design",
+      "development",
+      "graphic design",
       "data-visualization",
       "infographics",
       "diagrams",
-      "resources",
     ],
   },
   {
@@ -153,7 +153,7 @@ export const tools: Tool[] = [
     description: "Curated color palettes for web design and UI projects",
     url: "https://www.happyhues.co/palettes/13",
     image: "/images/tools/happy-hues-30.png",
-    categories: ["design", "resources", "color palette"],
+    categories: ["graphic design", "color palette"],
   },
   {
     id: "31",
@@ -161,7 +161,7 @@ export const tools: Tool[] = [
     description: "Library for manipulating fonts, written in Python",
     url: "https://fonttools.readthedocs.io/en/latest/",
     image: "/images/tools/fonttools-31.png",
-    categories: ["development", "design", "typography"],
+    categories: ["development", "type design"],
   },
   {
     id: "32",
@@ -169,7 +169,7 @@ export const tools: Tool[] = [
     description: "Gallery of free and open-source typefaces",
     url: "https://www.freefaces.gallery/",
     image: "/images/tools/free-faces-32.png",
-    categories: ["design", "typography", "resources", "fonts", "typefaces"],
+    categories: ["fonts", "typefaces"],
   },
   {
     id: "33",
@@ -177,13 +177,7 @@ export const tools: Tool[] = [
     description: "Typography courses and workshops based in Buenos Aires",
     url: "https://carbonetipografia.ar/en/blog-en/",
     image: "/images/tools/carbone-tipograf-a-33.png",
-    categories: [
-      "university",
-      "typography",
-      "education",
-      "courses",
-      "workshops",
-    ],
+    categories: ["university", "education", "courses", "workshops"],
   },
 
   {
@@ -193,13 +187,7 @@ export const tools: Tool[] = [
       "Educational resource for typography and lettering enthusiasts",
     url: "https://www.allthingsletters.com/start/",
     image: "/images/tools/all-things-letters-chris-campe-34.png",
-    categories: [
-      "typography",
-      "education",
-      "fonts",
-      "typefaces",
-      "signpainting",
-    ],
+    categories: ["education", "fonts", "typefaces", "signpainting"],
   },
   {
     id: "35",
@@ -234,7 +222,7 @@ export const tools: Tool[] = [
     description: "Independent type foundry creating contemporary typefaces",
     url: "https://www.setuptype.com/info",
     image: "/images/tools/setup-type-38.png",
-    categories: ["design", "typography", "resources"],
+    categories: ["fonts", "type design", "font studio", "portfolio"],
   },
   {
     id: "39",
@@ -270,7 +258,7 @@ export const tools: Tool[] = [
       "Platform for exploring and analyzing text through various linguistic and semantic lenses",
     url: "http://www.subtext.xyz/",
     image: "/images/tools/subtext.png",
-    categories: ["development", "productivity", "resources"],
+    categories: ["development", "productivity"],
   },
   {
     id: "43",
@@ -288,7 +276,7 @@ export const tools: Tool[] = [
       "A comprehensive crash course on Python scripting for the Glyphs font editor, helping type designers automate and enhance their workflow",
     url: "https://ilovetypography.com/academy/glyphs-python-crash-course/",
     image: "/images/tools/i-love-typography-glyphs-python-crash-course-44.png",
-    categories: ["design", "typography", "education", "development"],
+    categories: ["graphic design", "education", "development"],
   },
   {
     id: "45",
@@ -297,7 +285,7 @@ export const tools: Tool[] = [
       "Online platform offering specialized courses in typography, type design, and lettering taught by industry professionals",
     url: "https://www.typeelectives.com/courses",
     image: "/images/tools/type-electives-45.png",
-    categories: ["design", "typography", "education"],
+    categories: ["graphic design", "education"],
   },
   {
     id: "46",
@@ -306,7 +294,7 @@ export const tools: Tool[] = [
       "Online typography courses from Letterform Archive, offering in-depth education on type design and typography fundamentals",
     url: "https://letterformarchive.org/type-west-online/",
     image: "/images/tools/type-west-online-46.png",
-    categories: ["design", "typography", "education"],
+    categories: ["graphic design", "education"],
   },
   {
     id: "47",
@@ -315,7 +303,7 @@ export const tools: Tool[] = [
       "Continuing education courses in typography and calligraphy at The Cooper Union, offering hands-on instruction in letterform design and typographic principles",
     url: "https://cooper.edu/continuing-education/courses/typography-calligraphy",
     image: "/images/tools/cooper-union-typography-calligraphy-47.png",
-    categories: ["design", "typography", "education", "calligraphy"],
+    categories: ["education", "calligraphy"],
   },
   {
     id: "48",
@@ -324,7 +312,7 @@ export const tools: Tool[] = [
       "Specialized one-year program in type design at the Plantin Institute of Typography in Antwerp, focusing on professional typeface development",
     url: "https://plantininstituut.be/opleiding/expert-class-type-design/",
     image: "/images/tools/plantin-institute-expert-class-type-design-48.png",
-    categories: ["design", "typography", "education"],
+    categories: ["education"],
   },
   {
     id: "49",
@@ -333,7 +321,7 @@ export const tools: Tool[] = [
       "Interactive web tool for testing and comparing variable fonts, allowing designers to explore the full range of a font's design space",
     url: "https://fontgauntlet.com/",
     image: "/images/tools/font-gauntlet-49.png",
-    categories: ["design", "typography", "tools"],
+    categories: ["tools", "type design"],
   },
   {
     id: "50",
@@ -342,7 +330,7 @@ export const tools: Tool[] = [
       "A curated blog showcasing beautiful typography, lettering, and type design from around the world, serving as inspiration for designers and typography enthusiasts",
     url: "https://typeverything.com/",
     image: "/images/tools/type-everything-50.png",
-    categories: ["design", "typography", "inspiration", "resources"],
+    categories: ["design", "inspiration"],
   },
   {
     id: "51",
@@ -351,7 +339,7 @@ export const tools: Tool[] = [
       "Interactive reference tool for identifying and learning about typographic features and characters, helping designers and typography enthusiasts understand the anatomy of letterforms",
     url: "https://typonym.xyz/about.php",
     image: "/images/tools/typonym-51.png",
-    categories: ["design", "typography", "education", "resources"],
+    categories: ["design", "education"],
   },
   {
     id: "52",
@@ -369,7 +357,7 @@ export const tools: Tool[] = [
       "Online course teaching motion design for dynamic typographic compositions, helping designers create engaging animated typography for various digital media projects",
     url: "https://www.domestika.org/en/courses/2253-animated-typography-motion-design-for-dynamic-compositions/course",
     image: "/images/tools/domestika-animated-typography-53.png",
-    categories: ["design", "typography", "animation", "education"],
+    categories: ["design", "animation", "education"],
   },
   {
     id: "54",
@@ -378,7 +366,7 @@ export const tools: Tool[] = [
       "Open-source application for creating generative graphics and typography using Python, popular among type designers for creating specimens and testing fonts",
     url: "https://www.drawbot.com/",
     image: "/images/tools/drawbot-54.png",
-    categories: ["design", "typography", "development", "tools"],
+    categories: ["design", "development", "tools"],
   },
   {
     id: "55",
@@ -387,12 +375,12 @@ export const tools: Tool[] = [
       "Command-line tool from the FontTools library that converts OpenType and TrueType fonts to and from XML, allowing for detailed inspection and modification of font files",
     url: "https://fonttools.readthedocs.io/en/latest/ttx.html",
     image: "/images/tools/ttx-fonttools-55.png",
-    categories: ["development", "typography", "tools"],
+    categories: ["development", "tools"],
   },
 ];
 
 export const fixedCategories = [
-  "type designer",
+  "type design",
   "fonts",
   "data science",
   "artificial intelligence",
