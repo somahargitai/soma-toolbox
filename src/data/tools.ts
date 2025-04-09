@@ -20,6 +20,15 @@ export const tools: Tool[] = [
     categories: ["site build", "no code"],
   },
   {
+    id: "2",
+    name: "Unblast Fonts",
+    description:
+      "Collection of free high-quality Mockups, Fonts, Icons, Templates, Graphics, 3D Models, Colors",
+    url: "https://unblast.com/fonts/",
+    image: "/images/tools/unblast-fonts-2.png",
+    categories: ["fonts", "design", "resources"],
+  },
+  {
     id: "10",
     name: "Fonts In Use",
     description: "Archive of typography and lettering in modern graphic design",
