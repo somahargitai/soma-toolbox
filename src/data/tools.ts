@@ -11,6 +11,15 @@ export interface Tool {
 // resolved at runtime using getAssetPath utility to account for base path
 export const tools: Tool[] = [
   {
+    id: "0",
+    name: "Google AI Studio",
+    description:
+      "Platform for building and experimenting with generative AI applications using Google's AI models",
+    url: "https://aistudio.google.com/prompts/new_chat",
+    image: "/images/tools/google-ai-studio-0.png",
+    categories: ["ai", "chat", "llm"],
+  },
+  {
     id: "1",
     name: "Readymag",
     description:
@@ -27,6 +36,50 @@ export const tools: Tool[] = [
     url: "https://unblast.com/fonts/",
     image: "/images/tools/unblast-fonts-2.png",
     categories: ["fonts", "design", "resources"],
+  },
+  {
+    id: "3",
+    name: "Claude AI",
+    description:
+      "Anthropic's AI assistant that's helpful, harmless, and honest with advanced reasoning capabilities",
+    url: "https://claude.ai/new",
+    image: "/images/tools/claude-ai-3.png",
+    categories: ["ai", "chat", "llm"],
+  },
+  {
+    id: "4",
+    name: "Gemini",
+    description:
+      "Google's multimodal AI model that can understand and generate text, code, images, and more",
+    url: "https://gemini.google.com/",
+    image: "/images/tools/gemini-4.png",
+    categories: ["ai", "chat", "llm", "multimodal"],
+  },
+  {
+    id: "5",
+    name: "Fonts In Use",
+    description: "Archive of typography and lettering in modern graphic design",
+    url: "https://fontsinuse.com/",
+    image: "/images/tools/fonts-in-use-5.png",
+    categories: ["type design", "portfolio", "fonts"],
+  },
+  {
+    id: "6",
+    name: "The Brand Identity",
+    description:
+      "Elliott Moody's Platform showcasing the best branding, packaging, and graphic design work from around the world",
+    url: "https://the-brandidentity.com/",
+    image: "/images/tools/the-brandidentity-6.png",
+    categories: ["branding", "design", "inspiration"],
+  },
+  {
+    id: "7",
+    name: "Spaces / Lovers Magazine",
+    description:
+      "Talent representation agency connecting designers and engineers with opportunities. SPACES bridges the talent gap by matching extraordinary creators with meaningful projects.",
+    url: "https://spaces.is/loversmagazine",
+    image: "/images/tools/spaces-7.png",
+    categories: [],
   },
   {
     id: "10",
@@ -55,7 +108,7 @@ export const tools: Tool[] = [
   {
     id: "14",
     name: "Webflow",
-    description: "Visual web design platform for professionals",
+    description: "Visual web design platform for professiona`ls",
     url: "https://webflow.com/",
     image: "/images/tools/webflow-14.png",
     categories: ["design", "development"],
