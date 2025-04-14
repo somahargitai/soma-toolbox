@@ -51,6 +51,8 @@ npm run dev
 
 To add new tools, edit the `src/data/tools.ts` file and add new entries to the `tools` array.
 
+To generate thumbnails for these new items follow the instructions in the [thumbnail generator documentation](thumbnail-gen/README.md).
+
 ## License
 
 MIT

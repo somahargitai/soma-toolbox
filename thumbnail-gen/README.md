@@ -1,6 +1,6 @@
 # Website Thumbnail Generator
 
-This tool generates screenshots of websites using Puppeteer and updates the tools.ts file with the new image paths. 
+This tool generates screenshots of websites using Puppeteer and updates the tools.ts file with the new image paths.
 
 ## Features
 
@@ -15,7 +15,7 @@ This tool generates screenshots of websites using Puppeteer and updates the tool
 After trying multiple screenshot API services that failed with various errors, this tool now uses Puppeteer to generate screenshots locally. This approach is:
 
 - More reliable (no dependency on external services)
-- No API rate limits 
+- No API rate limits
 - Higher quality screenshots
 - Full control over the rendering process
 
@@ -87,9 +87,9 @@ It uses a comprehensive list of common selectors and text patterns to find and c
 
 ## File Naming
 
-Files are named using a sanitized version of the tool name followed by the ID:
+Files follow a naming convention: they are named using a sanitized version of the tool name followed by the ID:
 
-```
+```bash
 refactoring-guru-28.png
 ```
 

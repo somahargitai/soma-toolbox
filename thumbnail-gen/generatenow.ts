@@ -413,11 +413,11 @@ const processTools = async (toolIds: string[]): Promise<void> => {
     const hasImage = existingFileMap.has(expectedFileName);
     
     if (hasImage) {
-      console.log(`✓ ${tool.name} (ID: ${tool.id}) - Image exists, will skip`);
+      console.log(`✅ ${tool.name} (ID: ${tool.id}) - Image exists, will skip`);
       skipCount++;
       return false;
     } else {
-      console.log(`+ ${tool.name} (ID: ${tool.id}) - Image missing, will process`);
+      console.log(`🔥 ${tool.name} (ID: ${tool.id}) - Image missing, will process`);
       return true;
     }
   });
@@ -429,7 +429,7 @@ const processTools = async (toolIds: string[]): Promise<void> => {
       createValidFilename(tool.name, tool.id) === baseName
     );
     if (!isInToolsList) {
-      console.log(`! ${file} - File exists but tool not in tools.ts list`);
+      console.log(`❌ ${file} - File exists but tool not in tools.ts list`);
     }
   });
 

@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import HorizontalScroll from "./HorizontalScroll";
+import { getAllCategories } from "../data/tools";
 
 interface CategoryFilterProps {
   categories: string[];
@@ -27,6 +28,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
     useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const recommendationsRef = useRef<HTMLDivElement>(null);
+  const allCategories = useMemo(() => getAllCategories(), []);
 
   useEffect(() => {
     const checkMobile = /Mobi|Android/i.test(navigator.userAgent);
@@ -43,7 +45,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   // Update recommendations based on search term
   useEffect(() => {
     if (searchTerm.trim()) {
-      const filtered = categories
+      const filtered = allCategories
         .filter(
           (cat) =>
             cat.toLowerCase().includes(searchTerm.toLowerCase()) &&
@@ -54,7 +56,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
     } else {
       setRecommendations([]);
     }
-  }, [searchTerm, categories, customFilters]);
+  }, [searchTerm, allCategories, customFilters]);
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);

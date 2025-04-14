@@ -16,7 +16,7 @@ export const tools: Tool[] = [
     description:
       "Platform for building and experimenting with generative AI applications using Google's AI models",
     url: "https://aistudio.google.com/prompts/new_chat",
-    image: "/images/tools/google-ai-studio-0.png",
+    image: "/images/tools/google-0.png",
     categories: ["ai", "chat", "llm"],
   },
   {
@@ -57,11 +57,12 @@ export const tools: Tool[] = [
   },
   {
     id: "5",
-    name: "Fonts In Use",
-    description: "Archive of typography and lettering in modern graphic design",
-    url: "https://fontsinuse.com/",
-    image: "/images/tools/fonts-in-use-5.png",
-    categories: ["type design", "portfolio", "fonts"],
+    name: "Canva",
+    description:
+      "Online design platform that simplifies graphic design with drag-and-drop features and templates for social media, presentations, posters, and more",
+    url: "https://www.canva.com/",
+    image: "/images/tools/canva-5.png",
+    categories: ["design", "graphic design", "templates", "no code"],
   },
   {
     id: "6",
@@ -81,6 +82,16 @@ export const tools: Tool[] = [
     image: "/images/tools/spaces-7.png",
     categories: [],
   },
+  {
+    id: "8",
+    name: "Nahuel Gerth Lab",
+    description:
+      "Experimental design laboratory and portfolio showcasing innovative typography and interactive design projects",
+    url: "https://nahuelgerth.de/lab",
+    image: "/images/tools/nahuel-gerth-lab-8.png",
+    categories: ["type design", "experimental", "portfolio"],
+  },
+
   {
     id: "10",
     name: "Fonts In Use",
@@ -264,36 +275,37 @@ export const tools: Tool[] = [
     id: "36",
     name: "Hungarumlaut",
     description:
-      "Type foundry specializing in contemporary typefaces with Central European character support",
+      "Hungarian type foundry founded by Gábor Kóthay, specializing in contemporary typefaces with Central European character support, particularly focusing on Hungarian and other Central European languages",
     url: "https://hungarumlaut.com/info",
     image: "/images/tools/hungarumlaut-36.png",
-    categories: ["type designer", "font studio", "portfolio"],
+    categories: ["type designer", "foundry / studio", "portfolio"],
   },
   {
     id: "37",
     name: "Adam Katyi",
     description:
-      "Type designer and typographer with a focus on contemporary typefaces",
+      "Hungarian type designer and founder of his eponymous foundry, known for his work on the Hungarian National Typeface project and creating typefaces that bridge traditional and contemporary design",
     url: "https://adamkatyi.com/",
     image: "/images/tools/adam-katyi-37.png",
-    categories: ["type designer", "font studio", "portfolio"],
+    categories: ["type designer", "foundry / studio", "portfolio"],
   },
   {
     id: "38",
     name: "Setup Type",
-    description: "Independent type foundry creating contemporary typefaces",
+    description:
+      "Barcelona-based type foundry founded by Joan Barjau and Ricard Garcia, known for their experimental approach to type design and their work on custom typefaces for brands like Desigual and Roca",
     url: "https://www.setuptype.com/info",
     image: "/images/tools/setup-type-38.png",
-    categories: ["fonts", "type design", "font studio", "portfolio"],
+    categories: ["fonts", "type design", "foundry / studio", "portfolio"],
   },
   {
     id: "39",
     name: "TypeJockeys",
     description:
-      "Independent type foundry creating high-quality typefaces with a focus on craftsmanship",
+      "Vienna-based type foundry founded by Oliver Schöndorfer and Veronika Burian, specializing in high-quality typefaces with a focus on Central European character sets and custom type design for cultural institutions",
     url: "https://typejockeys.com/",
     image: "/images/tools/typejockeys-39.png",
-    categories: ["type designer", "font studio", "portfolio"],
+    categories: ["type designer", "foundry / studio", "portfolio"],
   },
   {
     id: "40",
@@ -308,10 +320,10 @@ export const tools: Tool[] = [
     id: "41",
     name: "Lineto",
     description:
-      "Swiss type foundry. Rich portfolio of typefaces and spectacular example of font presentation.",
+      "Swiss type foundry founded by Cornel Windlin and Stephan Müller, known for their minimalist approach and iconic typefaces like Circular and Akkurat, with a strong focus on corporate type design",
     url: "https://lineto.com/",
     image: "/images/tools/lineto-41.png",
-    categories: ["type designer", "font studio", "portfolio"],
+    categories: ["type designer", "foundry / studio", "portfolio"],
   },
   {
     id: "42",
@@ -439,6 +451,190 @@ export const tools: Tool[] = [
     image: "/images/tools/ttx-fonttools-55.png",
     categories: ["development", "tools"],
   },
+
+  {
+    id: "56",
+    name: "notwk.london",
+    description:
+      "London-based creative studio specializing in brand identity, digital design, and art direction with a contemporary and innovative approach",
+    url: "https://notwk.london/",
+    image: "/images/tools/not-working-56.png",
+    categories: ["design", "branding", "digital playground"],
+  },
+  {
+    id: "57",
+    name: "Asenda Law",
+    description:
+      "UK-based law firm offering specialized legal services with a modern, client-focused approach to legal representation and consultation",
+    url: "https://asendalaw.co.uk/",
+    image: "/images/tools/asenda-law-57.png",
+    categories: ["legal", "business", "services"],
+  },
+
+  {
+    id: "58",
+    name: "Black Foundry",
+    description:
+      "Independent type design studio creating innovative and high-quality typefaces with a focus on contemporary design and technical excellence",
+    url: "https://black-foundry.com/",
+    image: "/images/tools/black-foundry-58.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+
+  // ASENDA LAW – Ben Prangell & Thomas Broster
+  // BLACK FOUNDRY – Jérémie Hornus
+  // BOLD MONDAY – Paul van der Laan
+  // CONTRAST FOUNDRY – Maria Doreuli
+  // CREATIVE MARKET – Adrien Piro
+  // FONTFABRIC – Plamen Motev
+  // GOOGLE – Dave Crossland
+  // HILES CONSULTING – Julia Hiles
+  // I LOVE TYPOGRAPHY – Nadine Chahine
+  // JTD TYPE – James Hultquist-Todd
+  // MICROSOFT – Simon Daniels
+  // NEWLYN – Miles Newlyn
+  // SHARP TYPE – Chantra Malee
+  // TIRO TYPEWORKS – John Hudson
+  // TYPEMATES – Jakob Runge
+  // TYPETYPE – Alexander Kudriavtsev
+  // WOMEN IN TYPE – Flavia Zimbardi
+  // WORDS OF TYPE – Lisa Huang
+  // ZETAFONTS – Cosimo Lorenzo Pancini
+  {
+    id: "59",
+    name: "Bold Monday",
+    description:
+      "Dutch type foundry founded by Paul van der Laan and Pieter van Rosmalen, specializing in custom type design for brands and publications, with notable clients including The New York Times and The Guardian",
+    url: "https://boldmonday.com/",
+    image: "/images/tools/bold-monday-59.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "60",
+    name: "Contrast Foundry",
+    description:
+      "Russian type foundry founded by Maria Doreuli, focusing on creating typefaces that combine traditional calligraphic principles with modern design, with a particular emphasis on Cyrillic script development",
+    url: "https://contrastfoundry.com/",
+    image: "/images/tools/contrast-foundry-60.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "61",
+    name: "Creative Market",
+    description:
+      "Online marketplace for design assets including fonts, graphics, templates, and more from independent creators",
+    url: "https://creativemarket.com/",
+    image: "/images/tools/creative-market-61.png",
+    categories: ["design", "marketplace", "fonts", "resources"],
+  },
+  {
+    id: "62",
+    name: "Fontfabric",
+    description:
+      "Bulgarian type foundry founded by Plamen Motev, known for their extensive library of display and text typefaces, with a strong focus on multilingual support and corporate type design",
+    url: "https://www.fontfabric.com/",
+    image: "/images/tools/fontfabric-62.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "63",
+    name: "Hiles Consulting",
+    description:
+      "Specialized consulting services for creative businesses and type designers, offering strategic guidance and business development",
+    url: "https://www.hilesconsulting.com/",
+    image: "/images/tools/hiles-consulting-63.png",
+    categories: ["business", "consulting", "type design", "services"],
+  },
+  {
+    id: "64",
+    name: "I Love Typography",
+    description:
+      "Educational platform and blog dedicated to typography, type design, and the history and culture of letterforms",
+    url: "https://ilovetypography.com/",
+    image: "/images/tools/i-love-typography-64.png",
+    categories: ["education", "typography", "blog", "resources"],
+  },
+  {
+    id: "65",
+    name: "JTD Type",
+    description:
+      "UK-based type foundry founded by James Hultquist-Todd, specializing in custom type design for publishing and branding, with a particular focus on editorial typefaces and variable fonts",
+    url: "https://www.jtdtype.com/",
+    image: "/images/tools/jtd-type-65.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "66",
+    name: "Newlyn",
+    description:
+      "UK-based type foundry founded by Miles Newlyn, known for creating distinctive typefaces for global brands like BBC, Nike, and Samsung, with a focus on brand identity and custom type design",
+    url: "https://newlyn.com/",
+    image: "/images/tools/newlyn-66.png",
+    categories: ["type design", "fonts", "branding", "foundry / studio"],
+  },
+  {
+    id: "67",
+    name: "Sharp Type",
+    description:
+      "New York-based type foundry founded by Chantra Malee and Lucas Sharp, specializing in custom type design for brands and publications, with notable work for Apple, Nike, and The New York Times",
+    url: "https://sharptype.co/",
+    image: "/images/tools/sharp-type-67.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "68",
+    name: "Tiro Typeworks",
+    description:
+      "Canadian type foundry founded by John Hudson and Ross Mills, specializing in multilingual typography and complex script development, with extensive work on Indic and Arabic script typefaces",
+    url: "https://tiro.com/",
+    image: "/images/tools/tiro-typeworks-68.png",
+    categories: ["type design", "fonts", "multilingual", "foundry / studio"],
+  },
+  {
+    id: "69",
+    name: "TypeMates",
+    description:
+      "German type foundry founded by Jakob Runge and Yanone, known for their work on custom typefaces for brands like Audi and Volkswagen, with a focus on automotive and corporate type design",
+    url: "https://www.typemates.com/",
+    image: "/images/tools/typemates-69.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "70",
+    name: "TypeType",
+    description:
+      "Russian type foundry founded by Alexander Kudriavtsev, specializing in contemporary typefaces with extensive Cyrillic support, known for their work on custom typefaces for Russian brands and publications",
+    url: "https://typetype.org/",
+    image: "/images/tools/typetype-70.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "71",
+    name: "Women in Type",
+    description:
+      "Initiative celebrating and promoting the work of women in type design and typography, offering resources and community support",
+    url: "https://womenintype.com/",
+    image: "/images/tools/women-in-type-71.png",
+    categories: ["type design", "community", "education", "resources"],
+  },
+  {
+    id: "72",
+    name: "Words of Type",
+    description:
+      "Educational platform and resource for typography enthusiasts, offering insights into type design and typographic practices",
+    url: "https://wordsoftype.com/",
+    image: "/images/tools/words-of-type-72.png",
+    categories: ["education", "typography", "resources", "blog"],
+  },
+  {
+    id: "73",
+    name: "Zetafonts",
+    description:
+      "Italian type foundry founded by Cosimo Lorenzo Pancini, known for their extensive library of contemporary typefaces and their work on custom type design for Italian fashion and design brands",
+    url: "https://www.zetafonts.com/",
+    image: "/images/tools/zetafonts-73.png",
+    categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
 ];
 
 export const fixedCategories = [
@@ -447,7 +643,25 @@ export const fixedCategories = [
   "data science",
   "artificial intelligence",
   "graphic design",
+  "no code",
   "courses",
   "portfolio",
   "infographics",
+  "creative coding",
+  "digital playground",
 ];
+
+// Get all unique categories from tools
+export const getAllCategories = (): string[] => {
+  const allCategories = new Set<string>();
+
+  // Add fixed categories
+  fixedCategories.forEach((cat) => allCategories.add(cat));
+
+  // Add categories from tools
+  tools.forEach((tool) => {
+    tool.categories.forEach((cat) => allCategories.add(cat));
+  });
+
+  return Array.from(allCategories).sort();
+};

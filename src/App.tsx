@@ -1,17 +1,50 @@
 import { useState, useMemo, useEffect } from "react";
+
 import { tools, Tool, fixedCategories } from "./data/tools";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ToolCard from "./components/ToolCard";
 import CategoryFilter from "./components/CategoryFilter";
 import DottedBackground from "./components/DottedBackground";
-import SubscribeForm from "./components/SubscribeForm";
 import HeroSection from "./components/HeroSection";
+// import SubscribeForm from "./components/SubscribeForm";
 // import { getAssetPath } from './utils/path'
 import "./App.css";
 import "./styles/notion-cards.css";
 
+// Seeded random number generator
+const seededRandom = (seed: number) => {
+  const x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+};
+
+// Fisher-Yates shuffle with seed
+const shuffleWithSeed = (array: Tool[], seed: number): Tool[] => {
+  const shuffled = [...array];
+  let currentSeed = seed;
+  
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(seededRandom(currentSeed++) * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  
+  return shuffled;
+};
+
 function App() {
+  // Get today's date as seed (year * 10000 + month * 100 + day)
+  const todaySeed = useMemo(() => {
+    const today = new Date();
+    return today.getFullYear() * 10000 + 
+           (today.getMonth() + 1) * 100 + 
+           today.getDate();
+  }, []);
+
+  // Initialize tools with seeded shuffle
+  const [toolsList] = useState<Tool[]>(() => 
+    shuffleWithSeed(tools, todaySeed)
+  );
+
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [customFilters, setCustomFilters] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -20,7 +53,7 @@ function App() {
 
   // Filter tools based on both fixed categories and custom filters
   useEffect(() => {
-    let filtered = [...tools];
+    let filtered = [...toolsList]; // Use toolsList instead of tools
 
     // Apply fixed category filters (additive)
     if (activeFilters.length > 0) {
@@ -55,7 +88,7 @@ function App() {
     }
 
     setFilteredTools(filtered);
-  }, [activeFilters, customFilters, searchTerm]);
+  }, [activeFilters, customFilters, searchTerm, toolsList]);
 
   // Get displayed tools (limited to 6 initially, unless showAllItems is true)
   const displayedTools = useMemo(() => {
@@ -104,7 +137,7 @@ function App() {
           searchTerm) && (
           <div className="flex justify-between items-center mb-4">
             <p className="text-gray-400">
-              Showing {filteredTools.length} of {tools.length} tools
+              Showing {filteredTools.length} of {toolsList.length} tools
             </p>
             <button
               onClick={clearFilters}
@@ -215,7 +248,7 @@ function App() {
           </div>
         )}
 
-        <SubscribeForm />
+        {/* <SubscribeForm /> */}
       </main>
 
       <Footer />
