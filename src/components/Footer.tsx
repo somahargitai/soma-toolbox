@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/somahargitai/"
+            href="https://www.instagram.com/tintpostor/"
             className="text-gray-400 hover:text-white"
             aria-label="Instagram"
           >
