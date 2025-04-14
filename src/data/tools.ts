@@ -91,7 +91,15 @@ export const tools: Tool[] = [
     image: "/images/tools/nahuel-gerth-lab-8.png",
     categories: ["type design", "experimental", "portfolio"],
   },
-
+  {
+    id: "9",
+    name: "Samu.space",
+    description:
+      "Personal website, blog, and reading list by Samu featuring curated content and insights",
+    url: "https://samu.space/",
+    image: "/images/tools/samu-space-9.png",
+    categories: ["blog", "personal", "reading list"],
+  },
   {
     id: "10",
     name: "Fonts In Use",
