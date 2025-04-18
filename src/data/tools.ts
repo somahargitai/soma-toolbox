@@ -11,15 +11,6 @@ export interface Tool {
 // resolved at runtime using getAssetPath utility to account for base path
 export const tools: Tool[] = [
   {
-    id: "0",
-    name: "Google AI Studio",
-    description:
-      "Platform for building and experimenting with generative AI applications using Google's AI models",
-    url: "https://aistudio.google.com/prompts/new_chat",
-    image: "/images/tools/google-0.png",
-    categories: ["ai", "chat", "llm"],
-  },
-  {
     id: "1",
     name: "Readymag",
     description:
@@ -339,7 +330,7 @@ export const tools: Tool[] = [
     description:
       "Platform for exploring and analyzing text through various linguistic and semantic lenses",
     url: "http://www.subtext.xyz/",
-    image: "/images/tools/subtext.png",
+    image: "/images/tools/subtext-42.png",
     categories: ["development", "productivity"],
   },
   {
@@ -459,7 +450,6 @@ export const tools: Tool[] = [
     image: "/images/tools/ttx-fonttools-55.png",
     categories: ["development", "tools"],
   },
-
   {
     id: "56",
     name: "notwk.london",
@@ -488,26 +478,6 @@ export const tools: Tool[] = [
     image: "/images/tools/black-foundry-58.png",
     categories: ["type design", "fonts", "design", "foundry / studio"],
   },
-
-  // ASENDA LAW – Ben Prangell & Thomas Broster
-  // BLACK FOUNDRY – Jérémie Hornus
-  // BOLD MONDAY – Paul van der Laan
-  // CONTRAST FOUNDRY – Maria Doreuli
-  // CREATIVE MARKET – Adrien Piro
-  // FONTFABRIC – Plamen Motev
-  // GOOGLE – Dave Crossland
-  // HILES CONSULTING – Julia Hiles
-  // I LOVE TYPOGRAPHY – Nadine Chahine
-  // JTD TYPE – James Hultquist-Todd
-  // MICROSOFT – Simon Daniels
-  // NEWLYN – Miles Newlyn
-  // SHARP TYPE – Chantra Malee
-  // TIRO TYPEWORKS – John Hudson
-  // TYPEMATES – Jakob Runge
-  // TYPETYPE – Alexander Kudriavtsev
-  // WOMEN IN TYPE – Flavia Zimbardi
-  // WORDS OF TYPE – Lisa Huang
-  // ZETAFONTS – Cosimo Lorenzo Pancini
   {
     id: "59",
     name: "Bold Monday",
@@ -621,7 +591,7 @@ export const tools: Tool[] = [
     name: "Women in Type",
     description:
       "Initiative celebrating and promoting the work of women in type design and typography, offering resources and community support",
-    url: "https://womenintype.com/",
+    url: "https://www.women-in-type.com/",
     image: "/images/tools/women-in-type-71.png",
     categories: ["type design", "community", "education", "resources"],
   },
@@ -642,6 +612,133 @@ export const tools: Tool[] = [
     url: "https://www.zetafonts.com/",
     image: "/images/tools/zetafonts-73.png",
     categories: ["type design", "fonts", "design", "foundry / studio"],
+  },
+  {
+    id: "74",
+    name: "This Chair Does Not Exist",
+    description:
+      "AI-generated chair designs that showcase the intersection of artificial intelligence and furniture design, creating unique and sometimes impossible chair concepts",
+    url: "https://thischairdoesnotexist.com/",
+    image: "/images/tools/this-chair-does-not-exist-74.png",
+    categories: [
+      "artificial intelligence",
+      "design",
+      "creative coding",
+      "digital playground",
+    ],
+  },
+  {
+    id: "75",
+    name: "Drajmarsh",
+    description:
+      "Interactive digital playground featuring creative coding experiments and visual explorations, showcasing the intersection of art, design, and technology",
+    url: "https://drajmarsh.bitbucket.io/",
+    image: "/images/tools/drajmarsh-75.png",
+    categories: [
+      "creative coding",
+      "digital playground",
+      "design",
+      "interactive",
+    ],
+  },
+  {
+    id: "76",
+    name: "Calligrapher.ai",
+    description:
+      "Neural network that generates realistic handwriting in various styles, allowing users to create personalized handwritten text for creative projects",
+    url: "https://www.calligrapher.ai/",
+    image: "/images/tools/calligrapher-ai-76.png",
+    categories: ["typography", "digital playground"],
+  },
+  {
+    id: "77",
+    name: "SVG.io",
+    description:
+      "Online tool for creating, editing, and optimizing SVG files, offering a user-friendly interface for vector graphics manipulation and export options for web and print use",
+    url: "https://svg.io/",
+    image: "/images/tools/svg-io-77.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "78",
+    name: "Brian Stauffer",
+    description:
+      "Award-winning illustrator and artist known for his conceptual, thought-provoking editorial illustrations for major publications and brands, combining traditional and digital techniques",
+    url: "https://brianstauffer.com/",
+    image: "/images/tools/brian-stauffer-78.png",
+    categories: [
+      "graphic design",
+      "illustration",
+      "portfolio",
+      "animation",
+      "editorial",
+    ],
+  },
+  {
+    id: "79",
+    name: "Software Engineering Books Collection by Guillermo Moral",
+    description:
+      "Comprehensive collection of software engineering books covering various topics including programming languages, design patterns, algorithms, and best practices for developers",
+    url: "https://github.com/gmoral/Books",
+    image: "/images/tools/software-books-79.png",
+    categories: ["books", "education", "software engineering"],
+  },
+  {
+    id: "80",
+    name: "Google AI Studio",
+    description:
+      "Platform for building and experimenting with generative AI applications using Google's AI models",
+    url: "https://aistudio.google.com/prompts/new_chat",
+    image: "/images/tools/google-80.png",
+    categories: ["ai", "chat", "llm"],
+  },
+  {
+    id: "81",
+    name: "ChatGPT",
+    description:
+      "OpenAI's conversational AI model that can understand and generate human-like text, assist with writing, answer questions, and help with various creative and technical tasks",
+    url: "https://chat.openai.com/",
+    image: "/images/tools/chatgpt-81.png",
+    categories: ["ai", "chat", "llm"],
+  },
+  {
+    id: "82",
+    name: "Bruno Arizio",
+    description:
+      "Creative designer and art director, custom web animations for branding",
+    url: "https://brunoarizio.com/",
+    image: "/images/tools/bruno-arizio-82.png",
+    categories: [
+      "graphic design",
+      "portfolio",
+      "branding",
+      "art direction",
+      "animation",
+    ],
+  },
+  {
+    id: "83",
+    name: "Adrian Roselli",
+    description: "Web accessibility expert and consultant, web font size guide",
+    url: "https://adrianroselli.com/2024/03/the-ultimate-ideal-bestest-base-font-size-that-everyone-is-keeping-a-secret-especially-chet.html",
+    image: "/images/tools/adrian-roselli-83.png",
+    categories: [
+      "accessibility",
+      "a11y",
+      "web development",
+      "ux",
+      "design",
+      "education",
+    ],
+  },
+  {
+    id: "84",
+    name: "GitHub Copilot",
+    description:
+      "AI-powered code completion tool that helps developers write code faster and with fewer errors by suggesting whole lines or blocks of code as you type",
+    url: "https://github.com/copilot",
+    image: "/images/tools/github-copilot-84.png",
+    categories: ["ai", "chat", "llm"],
   },
 ];
 
