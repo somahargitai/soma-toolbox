@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
 } from "react-router-dom";
 import ToolboxHome from "./pages/ToolboxHome";
 import About from "./pages/About";
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
 
         {/* Fallback */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
       </Routes>
     </Router>
   );
