@@ -675,7 +675,8 @@ export const tools: Tool[] = [
     description:
       "Comprehensive collection of software engineering books covering various topics including programming languages, design patterns, algorithms, and best practices for developers",
     url: "https://github.com/gmoral/Books",
-    image: "/images/tools/software-engineering-books-collection-by-guillermo-moral-79.png",
+    image:
+      "/images/tools/software-engineering-books-collection-by-guillermo-moral-79.png",
     categories: ["books", "education", "software engineering"],
   },
   {
@@ -895,6 +896,14 @@ export const tools: Tool[] = [
     url: "https://headlessui.com/",
     image: "/images/tools/headless-ui-102.png",
     categories: ["headless component library"],
+  },
+  {
+    id: "103",
+    name: "Method of Action",
+    description: "Typography games on kerning, Bézier curves, and colors",
+    url: "https://method.ac/",
+    image: "/images/tools/method-of-action-103.png",
+    categories: ["typography", "digital playground"],
   },
 ];
 
