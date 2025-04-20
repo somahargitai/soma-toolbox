@@ -3,16 +3,11 @@ import { useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-  };
-
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
   };
 
   return (
