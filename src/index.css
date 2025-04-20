@@ -10,7 +10,8 @@
 body {
   /* color: white; */
   min-height: 100vh;
-  /* background-color: theme('colors.gray.900');
+  background-color: theme("colors.gray.900");
+  /*
   background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 16px 16px; */
   /* background-position: 0 0; */
