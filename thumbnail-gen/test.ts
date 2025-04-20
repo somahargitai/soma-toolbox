@@ -1,4 +1,5 @@
 import { Tool } from '../src/data/tools';
+import { generateImagePath } from './utils';
 
 // Test items for screenshot generation (multiple sites with varying complexity)
 export const testTools: Tool[] = [
@@ -7,7 +8,7 @@ export const testTools: Tool[] = [
     name: 'Refactoring Guru',
     description: 'Educational resource on design patterns and refactoring techniques',
     url: 'https://refactoring.guru/',
-    image: '/images/tools/refactoring-guru.png',
+    image: generateImagePath('Refactoring Guru', '28'),
     categories: ['development', 'education', 'resources'],
   },
   {
@@ -15,7 +16,7 @@ export const testTools: Tool[] = [
     name: 'Google',
     description: 'Test with a simple, fast-loading site',
     url: 'https://www.google.com/',
-    image: '/images/tools/google-test.png',
+    image: generateImagePath('Google', '101'),
     categories: ['test'],
   },
   {
@@ -23,7 +24,7 @@ export const testTools: Tool[] = [
     name: 'GitHub',
     description: 'Test with a medium-complexity site',
     url: 'https://github.com/',
-    image: '/images/tools/github-test.png',
+    image: generateImagePath('GitHub', '102'),
     categories: ['test'],
   },
   {
@@ -31,7 +32,7 @@ export const testTools: Tool[] = [
     name: 'CNN',
     description: 'Test with a site that has cookie banners and popups',
     url: 'https://www.cnn.com/',
-    image: '/images/tools/cnn-test.png',
+    image: generateImagePath('CNN', '103'),
     categories: ['test', 'popup'],
   }
 ]; 

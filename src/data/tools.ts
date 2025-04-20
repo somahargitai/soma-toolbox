@@ -61,7 +61,7 @@ export const tools: Tool[] = [
     description:
       "Elliott Moody's Platform showcasing the best branding, packaging, and graphic design work from around the world",
     url: "https://the-brandidentity.com/",
-    image: "/images/tools/the-brandidentity-6.png",
+    image: "/images/tools/the-brand-identity-6.png",
     categories: ["branding", "design", "inspiration"],
   },
   {
@@ -456,7 +456,7 @@ export const tools: Tool[] = [
     description:
       "London-based creative studio specializing in brand identity, digital design, and art direction with a contemporary and innovative approach",
     url: "https://notwk.london/",
-    image: "/images/tools/not-working-56.png",
+    image: "/images/tools/notwk-london-56.png",
     categories: ["design", "branding", "digital playground"],
   },
   {
@@ -675,7 +675,7 @@ export const tools: Tool[] = [
     description:
       "Comprehensive collection of software engineering books covering various topics including programming languages, design patterns, algorithms, and best practices for developers",
     url: "https://github.com/gmoral/Books",
-    image: "/images/tools/software-books-79.png",
+    image: "/images/tools/software-engineering-books-collection-by-guillermo-moral-79.png",
     categories: ["books", "education", "software engineering"],
   },
   {
@@ -684,7 +684,7 @@ export const tools: Tool[] = [
     description:
       "Platform for building and experimenting with generative AI applications using Google's AI models",
     url: "https://aistudio.google.com/prompts/new_chat",
-    image: "/images/tools/google-80.png",
+    image: "/images/tools/google-ai-studio-80.png",
     categories: ["ai", "chat", "llm"],
   },
   {
@@ -741,7 +741,7 @@ export const tools: Tool[] = [
     description:
       "Interactive typography experiment using P5.js that allows users to morph and manipulate letterforms in real-time",
     url: "https://typemorpher.xyz/p5-sketch-02",
-    image: "/images/tools/typemorpher-85.png",
+    image: "/images/tools/typemorpher-p5-sketch-85.png",
     categories: ["digital playground"],
   },
   {
@@ -786,7 +786,7 @@ export const tools: Tool[] = [
     description:
       "P5.js playground featuring interactive examples like Rainbow JS. Also worth to check: https://p5-tools.glitch.me/",
     url: "https://p5-t00ls.glitch.me/#rainbow-js",
-    image: "/images/tools/p5-tools-90.png",
+    image: "/images/tools/p5-js-visuals-90.png",
     categories: ["creative coding", "digital playground"],
   },
   {
@@ -821,7 +821,7 @@ export const tools: Tool[] = [
     description:
       "Google's Material Design components for React, providing a comprehensive set of pre-built, accessible UI components with customizable styling",
     url: "https://mui.com/",
-    image: "/images/tools/material-ui-94.png",
+    image: "/images/tools/material-ui-mui-94.png",
     categories: ["ui component library"],
   },
   {

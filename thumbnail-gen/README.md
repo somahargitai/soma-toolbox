@@ -9,6 +9,7 @@ This tool generates screenshots of websites using Puppeteer and updates the tool
 - **Mobile Optimized**: Captures mobile-friendly screenshots
 - **Smart Naming**: Creates descriptive filenames based on tool names
 - **Automatic Updates**: Updates tools.ts file with new image paths
+- **Consistent Naming**: Uses a dedicated utility for filename generation to ensure consistency
 
 ## Why Puppeteer?
 
@@ -63,6 +64,16 @@ To generate screenshots for all tools:
 npm run generate
 ```
 
+### Fix inconsistent image paths
+
+If you find inconsistencies in image paths in the tools.ts file (such as different naming formats), you can run:
+
+```bash
+npm run fix-paths
+```
+
+This will scan all tools and ensure their image paths use the consistent naming convention from the utils.ts file.
+
 ## How It Works
 
 The script uses Puppeteer, a headless Chrome browser API, to render and screenshot websites:
@@ -94,6 +105,8 @@ refactoring-guru-28.png
 ```
 
 This makes files more descriptive while ensuring uniqueness.
+
+The naming convention is implemented in the `utils.ts` file with the `generateImageFilename` and `generateImagePath` functions. These functions ensure consistent naming across the entire application.
 
 ## Troubleshooting
 

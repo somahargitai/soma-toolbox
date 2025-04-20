@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import puppeteer from 'puppeteer';
 import { tools } from '../src/data/tools';
 import { testTools } from './test';
+import { generateImageFilename, generateImagePath } from './utils';
 
 // Get __dirname equivalent in ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -304,14 +305,6 @@ const dismissPopups = async (page: any): Promise<void> => {
   }
 };
 
-// Helper to create a valid filename from a tool name
-const createValidFilename = (toolName: string, toolId: string): string => {
-  // Replace non-alphanumeric characters with hyphens and convert to lowercase
-  const sanitized = toolName.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-');
-  // Trim leading/trailing hyphens and add tool ID for uniqueness
-  return `${sanitized.replace(/^-+|-+$/g, '')}-${toolId}`;
-};
-
 // Function to update the tools.ts file with the new image path
 const updateToolsFile = (toolId: string, newImagePath: string): boolean => {
   try {
@@ -409,7 +402,7 @@ const processTools = async (toolIds: string[]): Promise<void> => {
 
   // Filter tools that need processing (in list but no image)
   const toolsNeedingScreenshots = toolsToProcess.filter(tool => {
-    const expectedFileName = createValidFilename(tool.name, tool.id);
+    const expectedFileName = generateImageFilename(tool.name, tool.id);
     const hasImage = existingFileMap.has(expectedFileName);
     
     if (hasImage) {
@@ -426,7 +419,7 @@ const processTools = async (toolIds: string[]): Promise<void> => {
   existingFiles.forEach(file => {
     const baseName = file.replace('.png', '');
     const isInToolsList = toolsToProcess.some(tool => 
-      createValidFilename(tool.name, tool.id) === baseName
+      generateImageFilename(tool.name, tool.id) === baseName
     );
     if (!isInToolsList) {
       console.log(`❌ ${file} - File exists but tool not in tools.ts list`);
@@ -440,7 +433,7 @@ const processTools = async (toolIds: string[]): Promise<void> => {
     try {
       console.log(`\nProcessing: ${tool.name} (ID: ${tool.id})`);
       
-      const fileBaseName = createValidFilename(tool.name, tool.id);
+      const fileBaseName = generateImageFilename(tool.name, tool.id);
       const outputFileName = `${fileBaseName}.png`;
       const outputPath = path.resolve(targetDir, outputFileName);
       
@@ -449,7 +442,7 @@ const processTools = async (toolIds: string[]): Promise<void> => {
       
       if (success) {
         // Update the tools.ts file with the new image path
-        const newImagePath = `/images/tools/${outputFileName}`;
+        const newImagePath = generateImagePath(tool.name, tool.id);
         const updateSuccess = updateToolsFile(tool.id, newImagePath);
         
         if (updateSuccess) {

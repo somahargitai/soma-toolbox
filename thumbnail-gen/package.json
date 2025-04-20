@@ -8,6 +8,7 @@
     "start": "tsx generatenow.ts",
     "test": "NODE_ENV=test tsx generatenow.ts",
     "generate": "tsx generatenow.ts",
+    "fix-paths": "tsx fix-image-paths.ts",
     "build": "tsc"
   },
   "dependencies": {
