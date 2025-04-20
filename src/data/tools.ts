@@ -905,6 +905,15 @@ export const tools: Tool[] = [
     image: "/images/tools/method-of-action-103.png",
     categories: ["typography", "digital playground"],
   },
+  {
+    id: "104",
+    name: "Perplexity AI",
+    description:
+      "AI-powered search engine that provides comprehensive answers to complex questions by analyzing and synthesizing information from across the web",
+    url: "https://www.perplexity.ai/",
+    image: "/images/tools/perplexity-ai-104.png",
+    categories: ["ai", "chat", "llm"],
+  },
 ];
 
 export const fixedCategories = [
