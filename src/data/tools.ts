@@ -145,7 +145,7 @@ export const tools: Tool[] = [
     description: "Utility-first CSS framework for rapid UI development",
     url: "https://tailwindcss.com/",
     image: "/images/tools/tailwind-css-17.png",
-    categories: ["development", "graphic design"],
+    categories: ["development"],
   },
   {
     id: "18",
@@ -620,12 +620,7 @@ export const tools: Tool[] = [
       "AI-generated chair designs that showcase the intersection of artificial intelligence and furniture design, creating unique and sometimes impossible chair concepts",
     url: "https://thischairdoesnotexist.com/",
     image: "/images/tools/this-chair-does-not-exist-74.png",
-    categories: [
-      "artificial intelligence",
-      "design",
-      "creative coding",
-      "digital playground",
-    ],
+    categories: ["design", "creative coding", "digital playground"],
   },
   {
     id: "75",
@@ -739,6 +734,167 @@ export const tools: Tool[] = [
     url: "https://github.com/copilot",
     image: "/images/tools/github-copilot-84.png",
     categories: ["ai", "chat", "llm"],
+  },
+  {
+    id: "85",
+    name: "TypeMorpher P5 Sketch",
+    description:
+      "Interactive typography experiment using P5.js that allows users to morph and manipulate letterforms in real-time",
+    url: "https://typemorpher.xyz/p5-sketch-02",
+    image: "/images/tools/typemorpher-85.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "86",
+    name: "Gradientor",
+    description:
+      "A tool for creating and exploring beautiful CSS gradients with an intuitive interface",
+    url: "https://gradientor.afterimage.cc/",
+    image: "/images/tools/gradientor-86.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "87",
+    name: "Grid Paint",
+    description:
+      "An interactive tool by Schultzschultz for creating and exploring grid-based designs and patterns",
+    url: "https://schultzschultz.com/gridpaint/",
+    image: "/images/tools/grid-paint-87.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "88",
+    name: "Bauhaus Labyrinth",
+    description:
+      "An interactive tool that generates unique typefaces inspired by the Bauhaus design principles and geometric forms",
+    url: "https://otf.bauhauslabor.de/#/generate",
+    image: "/images/tools/bauhaus-labyrinth-88.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "89",
+    name: "Lena Weber",
+    description:
+      "A creative portfolio showcasing innovative design work and interactive digital experiences",
+    url: "https://lenaweber.com/",
+    image: "/images/tools/lena-weber-89.png",
+    categories: ["portfolio", "digital playground", "creative coding"],
+  },
+  {
+    id: "90",
+    name: "P5.JS visuals",
+    description:
+      "P5.js playground featuring interactive examples like Rainbow JS. Also worth to check: https://p5-tools.glitch.me/",
+    url: "https://p5-t00ls.glitch.me/#rainbow-js",
+    image: "/images/tools/p5-tools-90.png",
+    categories: ["creative coding", "digital playground"],
+  },
+  {
+    id: "91",
+    name: "p5live",
+    description: "p5.js playground running in browser.",
+    url: "https://teddavis.org/p5live/",
+    image: "/images/tools/p5live-91.png",
+    categories: ["creative coding"],
+  },
+  {
+    id: "92",
+    name: "React Spring",
+    description:
+      "A spring-physics based animation library for React applications that makes it easy to create fluid and natural animations",
+    url: "https://www.react-spring.dev/",
+    image: "/images/tools/react-spring-92.png",
+    categories: ["development", "animation", "animation library"],
+  },
+  {
+    id: "93",
+    name: "Motion.dev",
+    description:
+      "A powerful animation editor for creating complex web animations with a visual interface, allowing designers to export production-ready code",
+    url: "https://motion.dev/",
+    image: "/images/tools/motion-dev-93.png",
+    categories: ["animation", "animation library", "development"],
+  },
+  {
+    id: "94",
+    name: "Material UI (MUI)",
+    description:
+      "Google's Material Design components for React, providing a comprehensive set of pre-built, accessible UI components with customizable styling",
+    url: "https://mui.com/",
+    image: "/images/tools/material-ui-94.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "95",
+    name: "Chakra UI",
+    description:
+      "Accessible and themeable React components that make it easy to build consistent, responsive user interfaces with support for light and dark modes",
+    url: "https://chakra-ui.com/",
+    image: "/images/tools/chakra-ui-95.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "96",
+    name: "Ant Design",
+    description:
+      "Enterprise-level UI design system for React applications with a comprehensive collection of high-quality components for building rich, interactive user interfaces",
+    url: "https://ant.design/",
+    image: "/images/tools/ant-design-96.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "97",
+    name: "ShadCN/UI",
+    description:
+      "Collection of headless Radix components styled with Tailwind CSS, offering beautifully designed, accessible UI components with complete styling flexibility",
+    url: "https://ui.shadcn.com/",
+    image: "/images/tools/shadcn-ui-97.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "98",
+    name: "Blueprint.js",
+    description:
+      "UI toolkit designed specifically for building complex, data-dense desktop-like web applications with a focus on consistency and usability",
+    url: "https://blueprintjs.com/",
+    image: "/images/tools/blueprint-js-98.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "99",
+    name: "Mantine",
+    description:
+      "Modern React component library featuring a clean design system with over 100 customizable components and hooks for building feature-rich applications",
+    url: "https://mantine.dev/",
+    image: "/images/tools/mantine-99.png",
+    categories: ["ui component library"],
+  },
+  {
+    id: "100",
+    name: "Radix UI",
+    description:
+      "Unstyled, accessible UI primitives for building high-quality React applications with complete separation of styling and behavior, providing robust functionality while allowing total design freedom",
+    url: "https://www.radix-ui.com/",
+    image: "/images/tools/radix-ui-100.png",
+    categories: ["headless component library"],
+  },
+  {
+    id: "101",
+    name: "React Aria",
+    description:
+      "Adobe's collection of React Hooks that provides accessible UI primitives for your design system, handling complex interactions, accessibility, and behavior while leaving styling completely up to you",
+    url: "https://react-spectrum.adobe.com/react-aria/",
+    image: "/images/tools/react-aria-101.png",
+    categories: ["headless component library"],
+  },
+  {
+    id: "102",
+    name: "Headless UI",
+    description:
+      "Completely unstyled, fully accessible UI components from Tailwind Labs, designed to integrate perfectly with Tailwind CSS while providing robust functionality for common interface elements like dropdowns and modals",
+    url: "https://headlessui.com/",
+    image: "/images/tools/headless-ui-102.png",
+    categories: ["headless component library"],
   },
 ];
 
