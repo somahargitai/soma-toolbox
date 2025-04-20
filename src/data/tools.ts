@@ -70,7 +70,7 @@ export const tools: Tool[] = [
     description:
       "Talent representation agency connecting designers and engineers with opportunities. SPACES bridges the talent gap by matching extraordinary creators with meaningful projects.",
     url: "https://spaces.is/loversmagazine",
-    image: "/images/tools/spaces-7.png",
+    image: "/images/tools/spaces-lovers-magazine-7.png",
     categories: [],
   },
   {
