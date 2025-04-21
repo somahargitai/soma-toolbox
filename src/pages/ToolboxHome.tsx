@@ -7,6 +7,7 @@ import ToolCard from "../components/ToolCard";
 import CategoryFilter from "../components/CategoryFilter";
 import DottedBackground from "../components/DottedBackground";
 import HeroSection from "../components/HeroSection";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 import "../App.css";
 import "../styles/notion-cards.css";
 
@@ -172,7 +173,7 @@ function ToolboxHome() {
           )}
         </div>
 
-        {/* "More" button - only shown if there are more than 6 items and not all are displayed */}
+        {/* "Show More" button - only shown if there are more than 6 items and not all are displayed */}
         {hasMoreItems && !showAllItems && (
           <div className="flex justify-center mt-8">
             <button
@@ -243,6 +244,8 @@ function ToolboxHome() {
                 Show Less
               </span>
             </button>
+            {/* Back to Top button */}
+            <ScrollToTopButton className="ml-4" />
           </div>
         )}
 

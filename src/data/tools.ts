@@ -108,6 +108,15 @@ export const tools: Tool[] = [
     categories: ["development", "hosting"],
   },
   {
+    id: "12",
+    name: "Font Style Matcher",
+    description:
+      "Tool to help match fallback fonts to custom fonts to minimize layout shifts",
+    url: "https://meowni.ca/font-style-matcher/",
+    image: "/images/tools/font-style-matcher-12.png",
+    categories: ["typography", "tools", "digital playground"],
+  },
+  {
     id: "13",
     name: "Airtable",
     description: "Part spreadsheet, part database, and entirely flexible",
@@ -154,6 +163,24 @@ export const tools: Tool[] = [
     url: "https://stability.ai/",
     image: "/images/tools/stable-diffusion-18.png",
     categories: ["artificial intelligence", "graphic design"],
+  },
+  {
+    id: "19",
+    name: "Meow",
+    description:
+      "Monica Dinculescu's personal website and blog with web experiments",
+    url: "https://meowni.ca/",
+    image: "/images/tools/meow-19.png",
+    categories: [
+      "⭐️ favourite",
+      "development",
+      "blog",
+      "web experiments",
+      "creative coding",
+      "digital playground",
+      "typography",
+      "design",
+    ],
   },
   {
     id: "22",
@@ -322,7 +349,12 @@ export const tools: Tool[] = [
       "Swiss type foundry founded by Cornel Windlin and Stephan Müller, known for their minimalist approach and iconic typefaces like Circular and Akkurat, with a strong focus on corporate type design",
     url: "https://lineto.com/",
     image: "/images/tools/lineto-41.png",
-    categories: ["type designer", "foundry / studio", "portfolio"],
+    categories: [
+      "⭐️ favourite",
+      "type designer",
+      "foundry / studio",
+      "portfolio",
+    ],
   },
   {
     id: "42",
@@ -677,7 +709,7 @@ export const tools: Tool[] = [
     url: "https://github.com/gmoral/Books",
     image:
       "/images/tools/software-engineering-books-collection-by-guillermo-moral-79.png",
-    categories: ["books", "education", "software engineering"],
+    categories: ["⭐️ favourite", "books", "education", "software engineering"],
   },
   {
     id: "80",
@@ -761,7 +793,7 @@ export const tools: Tool[] = [
       "An interactive tool by Schultzschultz for creating and exploring grid-based designs and patterns",
     url: "https://schultzschultz.com/gridpaint/",
     image: "/images/tools/grid-paint-87.png",
-    categories: ["digital playground"],
+    categories: ["⭐️ favourite", "digital playground"],
   },
   {
     id: "88",
@@ -917,6 +949,7 @@ export const tools: Tool[] = [
 ];
 
 export const fixedCategories = [
+  "⭐️ favourite",
   "type design",
   "fonts",
   "data science",
