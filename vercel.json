@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "/toolbox", "dest": "/toolbox/index.html" },
+    { "src": "/toolbox/(.*)", "dest": "/toolbox/index.html" }
+  ]
+} 

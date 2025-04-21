@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,13 +67,23 @@ const Header: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href={isAboutPage ? "/" : "/about"}
-                  className="hover:text-gray-300 font-medium"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {isAboutPage ? "Back to Toolbox" : "About"}
-                </a>
+                {isAboutPage ? (
+                  <Link
+                    to="/"
+                    className="hover:text-gray-300 font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Back to Toolbox
+                  </Link>
+                ) : (
+                  <Link
+                    to="/about"
+                    className="hover:text-gray-300 font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                )}
               </li>
             </ul>
           </div>
@@ -120,12 +130,21 @@ const Header: React.FC = () => {
                   </a>
                 </li>
                 <li className="mx-5">
-                  <a
-                    href={isAboutPage ? "/" : "/about"}
-                    className="hover:text-gray-300 font-medium text-md"
-                  >
-                    {isAboutPage ? "Back to Toolbox" : "About"}
-                  </a>
+                  {isAboutPage ? (
+                    <Link
+                      to="/"
+                      className="hover:text-gray-300 font-medium text-md"
+                    >
+                      Back to Toolbox
+                    </Link>
+                  ) : (
+                    <Link
+                      to="/about"
+                      className="hover:text-gray-300 font-medium text-md"
+                    >
+                      About
+                    </Link>
+                  )}
                 </li>
               </ul>
             </div>

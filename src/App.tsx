@@ -10,11 +10,15 @@ import About from "./pages/About";
 import "./App.css";
 
 const App: React.FC = () => {
+  // Get the base path from the environment, matches vite.config.ts setting
+  const isProduction = import.meta.env.PROD;
+  const basePath = isProduction ? "/toolbox" : "";
+  
   return (
-    <Router basename="/toolbox">
+    <Router basename={basePath}>
       <Routes>
         <Route path="/" element={<ToolboxHome />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
 
         {/* Fallback */}
         {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
