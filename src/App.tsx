@@ -11,10 +11,10 @@ import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/toolbox">
       <Routes>
         <Route path="/" element={<ToolboxHome />} />
-        <Route path="/about" element={<About />} />
+        <Route path="about" element={<About />} />
 
         {/* Fallback */}
         {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
