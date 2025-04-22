@@ -946,6 +946,24 @@ export const tools: Tool[] = [
     image: "/images/tools/perplexity-ai-104.png",
     categories: ["ai", "chat", "llm"],
   },
+  {
+    id: "105",
+    name: "Full-Bleed Layout Tutorial",
+    description:
+      "Josh Comeau's comprehensive guide to creating full-bleed layouts in CSS, explaining how to break content out of containers while maintaining readable text widths",
+    url: "https://www.joshwcomeau.com/css/full-bleed/",
+    image: "/images/tools/full-bleed-105.png",
+    categories: ["web UI layout", "css", "development"],
+  },
+  {
+    id: "106",
+    name: "Layout Breakouts",
+    description:
+      "Ryan Mulligan's tutorial on advanced CSS layout techniques for breaking elements out of their containers to create visually dynamic and engaging web designs",
+    url: "https://ryanmulligan.dev/blog/layout-breakouts/",
+    image: "/images/tools/layout-breakouts-106.png",
+    categories: ["web UI layout", "css", "development"],
+  },
 ];
 
 export const fixedCategories = [
