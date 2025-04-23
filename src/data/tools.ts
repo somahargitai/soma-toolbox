@@ -964,6 +964,24 @@ export const tools: Tool[] = [
     image: "/images/tools/layout-breakouts-106.png",
     categories: ["web UI layout", "css", "development"],
   },
+  {
+    id: "107",
+    name: "Clamp Calculator",
+    description:
+      "A tool for creating fluid typography and spacing with CSS clamp() function",
+    url: "https://clamp.font-size.app/",
+    image: "/images/tools/clamp-calculator-107.png",
+    categories: ["typography", "css", "development", "tools"],
+  },
+  {
+    id: "108",
+    name: "Shreya Maheshwari Design",
+    description:
+      "Portfolio showcasing type design, UX/UI process, creative coding",
+    url: "https://shreyamaheshwaridesign.myportfolio.com/",
+    image: "/images/tools/shreya-maheshwari-108.png",
+    categories: ["portfolio", "graphic design", "typography", "ux", "ui"],
+  },
 ];
 
 export const fixedCategories = [
