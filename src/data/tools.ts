@@ -982,6 +982,15 @@ export const tools: Tool[] = [
     image: "/images/tools/shreya-maheshwari-108.png",
     categories: ["portfolio", "graphic design", "typography", "ux", "ui"],
   },
+  {
+    id: "109",
+    name: "Monotype Font Pairing",
+    description:
+      "A tool by Monotype that helps designers find complementary font combinations for their projects",
+    url: "https://www.monotype.com/font-pairing",
+    image: "/images/tools/monotype-font-pairing-109.png",
+    categories: ["typography", "fonts", "tools"],
+  },
 ];
 
 export const fixedCategories = [
