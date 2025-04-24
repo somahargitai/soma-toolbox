@@ -991,6 +991,60 @@ export const tools: Tool[] = [
     image: "/images/tools/monotype-font-pairing-109.png",
     categories: ["typography", "fonts", "tools"],
   },
+  {
+    id: "110",
+    name: "Font Pairing Generator",
+    description:
+      "A tool by Fontpair that helps designers find complementary font combinations for their projects",
+    url: "https://fontpair.co/",
+    image: "/images/tools/font-pairing-generator-110.png",
+    categories: ["typography", "fonts", "tools"],
+  },
+  {
+    id: "111",
+    name: "BBC Sound Effects",
+    description:
+      "Archive of over 33,000 high-quality sound effects for personal, educational, and research purposes",
+    url: "https://sound-effects.bbcrewind.co.uk/",
+    image: "/images/tools/bbc-sound-effects-111.png",
+    categories: ["audio", "sound", "resources", "media"],
+  },
+  {
+    id: "112",
+    name: "Fontjoy",
+    description:
+      "Deep learning-based font pairing tool that generates harmonious font combinations based on your input",
+    url: "https://fontjoy.com/pairing/",
+    image: "/images/tools/fontjoy-112.png",
+    categories: ["typography", "fonts", "tools"],
+  },
+  {
+    id: "113",
+    name: "Typewolf",
+    description:
+      "Independent typography resource that helps designers choose the perfect font combination for their next design project, featuring curated typography inspiration from real websites",
+    url: "https://www.typewolf.com/",
+    image: "/images/tools/typewolf-113.png",
+    categories: ["typography", "fonts", "inspiration", "resources"],
+  },
+  {
+    id: "114",
+    name: "Typewolf All Fonts",
+    description:
+      "Comprehensive database of font statistics and usage trends across the web, showing the most popular fonts used on design-focused websites and offering insights into typography trends",
+    url: "https://www.typewolf.com/all-fonts",
+    image: "/images/tools/typewolf-all-fonts-114.png",
+    categories: ["typography", "fonts", "resources", "statistics"],
+  },
+  {
+    id: "115",
+    name: "Jeremiah Shoaf",
+    description:
+      "Personal website and portfolio of Jeremiah Shoaf, the founder of Typewolf, featuring typography resources, design insights, and curated font recommendations",
+    url: "https://www.jeremiahshoaf.com/",
+    image: "/images/tools/jeremiah-shoaf-115.png",
+    categories: ["typography", "fonts", "portfolio", "design"],
+  },
 ];
 
 export const fixedCategories = [
