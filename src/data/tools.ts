@@ -586,10 +586,10 @@ export const tools: Tool[] = [
     id: "67",
     name: "Sharp Type",
     description:
-      "New York-based type foundry founded by Chantra Malee and Lucas Sharp, specializing in custom type design for brands and publications, with notable work for Apple, Nike, and The New York Times",
-    url: "https://sharptype.co/",
+      "New York-based type foundry founded by Chantra Malee and Lucas Sharp, with notable work for Apple, Nike, and The New York Times. OmniLatin tool is also worth checking out.",
+    url: "https://www.sharptype.co/case-studies",
     image: "/images/tools/sharp-type-67.png",
-    categories: ["type design", "fonts", "design", "foundry / studio"],
+    categories: ["type design", "fonts", "design", "foundry / studio", "tools"],
   },
   {
     id: "68",
@@ -1044,6 +1044,42 @@ export const tools: Tool[] = [
     url: "https://www.jeremiahshoaf.com/",
     image: "/images/tools/jeremiah-shoaf-115.png",
     categories: ["typography", "fonts", "portfolio", "design"],
+  },
+  {
+    id: "117",
+    name: "Coding Font",
+    description:
+      "Find your programming font by comparing different coding fonts side by side in a realistic coding environment",
+    url: "https://www.codingfont.com/",
+    image: "/images/tools/coding-font-117.png",
+    categories: ["digital playground"],
+  },
+  {
+    id: "118",
+    name: "Repomix",
+    description:
+      "Pack your codebase into AI-friendly formats on the web or use the npm package: https://github.com/yamadashy/repomix",
+    url: "https://www.repomix.com/",
+    image: "/images/tools/repomix-118.png",
+    categories: ["development", "github", "resources", "tools", "llm", "ai"],
+  },
+  {
+    id: "119",
+    name: "GitHub Profile Summary Cards",
+    description:
+      "Tool to generate summary cards for GitHub profiles with visualizations of user statistics, contributions, and repository information",
+    url: "https://github-profile-summary-cards-dimkagithubvercel.vercel.app/demo.html",
+    image: "/images/tools/github-profile-summary-cards-119.png",
+    categories: ["development", "github", "tools"],
+  },
+  {
+    id: "120",
+    name: "A Complete Guide to CSS Grid",
+    description:
+      "Comprehensive reference guide to CSS Grid layout, featuring visual examples, code snippets, and detailed explanations of all grid properties and concepts",
+    url: "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    image: "/images/tools/a-complete-guide-to-css-grid-120.png",
+    categories: ["development", "css", "web design", "resources", "education"],
   },
 ];
 
