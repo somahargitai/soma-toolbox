@@ -634,7 +634,7 @@ export const tools: Tool[] = [
       "Educational platform and resource for typography enthusiasts, offering insights into type design and typographic practices",
     url: "https://wordsoftype.com/",
     image: "/images/tools/words-of-type-72.png",
-    categories: ["education", "typography", "resources", "blog"],
+    categories: ["education", "typography", "type design", "resources", "blog"],
   },
   {
     id: "73",
@@ -952,7 +952,7 @@ export const tools: Tool[] = [
     description:
       "Josh Comeau's comprehensive guide to creating full-bleed layouts in CSS, explaining how to break content out of containers while maintaining readable text widths",
     url: "https://www.joshwcomeau.com/css/full-bleed/",
-    image: "/images/tools/full-bleed-105.png",
+    image: "/images/tools/full-bleed-layout-tutorial-105.png",
     categories: ["web UI layout", "css", "development"],
   },
   {
@@ -979,7 +979,7 @@ export const tools: Tool[] = [
     description:
       "Portfolio showcasing type design, UX/UI process, creative coding",
     url: "https://shreyamaheshwaridesign.myportfolio.com/",
-    image: "/images/tools/shreya-maheshwari-108.png",
+    image: "/images/tools/shreya-maheshwari-design-108.png",
     categories: ["portfolio", "graphic design", "typography", "ux", "ui"],
   },
   {
@@ -1059,7 +1059,7 @@ export const tools: Tool[] = [
     name: "Repomix",
     description:
       "Pack your codebase into AI-friendly formats on the web or use the npm package: https://github.com/yamadashy/repomix",
-    url: "https://www.repomix.com/",
+    url: "https://repomix.com/",
     image: "/images/tools/repomix-118.png",
     categories: ["development", "github", "resources", "tools", "llm", "ai"],
   },
@@ -1080,6 +1080,15 @@ export const tools: Tool[] = [
     url: "https://css-tricks.com/snippets/css/complete-guide-grid/",
     image: "/images/tools/a-complete-guide-to-css-grid-120.png",
     categories: ["development", "css", "web design", "resources", "education"],
+  },
+  {
+    id: "121",
+    name: "Use & Modify",
+    description:
+      "A typeface collection by Raphaël Bastide featuring beautiful, classy, punk, professional, incomplete, and weird typefaces for creative projects",
+    url: "https://usemodify.com/",
+    image: "/images/tools/use-modify-121.png",
+    categories: ["typography", "fonts", "resources", "type design"],
   },
 ];
 

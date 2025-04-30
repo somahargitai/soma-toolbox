@@ -36,6 +36,22 @@ npm install
 
 Puppeteer will download a compatible version of Chromium during installation.
 
+3. Alternatively, you can use the setup-and-test script which will both install dependencies and run a test:
+
+```bash
+./setup-and-test.sh
+```
+
+This script will:
+
+- Install all required dependencies
+- Run a test with sample websites
+- Generate example screenshots for:
+  - Refactoring Guru (ID: 28)
+  - Google (ID: 101)
+  - GitHub (ID: 102)
+- Provide instructions for generating more screenshots
+
 ## Usage
 
 ### Testing with sample websites
