@@ -1090,6 +1090,21 @@ export const tools: Tool[] = [
     image: "/images/tools/use-modify-121.png",
     categories: ["typography", "fonts", "resources", "type design"],
   },
+  {
+    id: "122",
+    name: "Future Fonts",
+    description:
+      "Platform for discovering and purchasing in-progress typefaces directly from independent type designers, supporting their work while gaining early access to evolving fonts",
+    url: "https://www.future-fonts.com/foundries",
+    image: "/images/tools/future-fonts-122.png",
+    categories: [
+      "typography",
+      "fonts",
+      "type design",
+      "foundry / studio",
+      "resources",
+    ],
+  },
 ];
 
 export const fixedCategories = [
