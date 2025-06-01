@@ -1105,6 +1105,24 @@ export const tools: Tool[] = [
       "resources",
     ],
   },
+  {
+    id: "123",
+    name: "CORS Proxy",
+    description:
+      "A free and open-source CORS proxy service that helps developers bypass CORS restrictions when making API requests from client-side applications",
+    url: "https://corsproxy.io/",
+    image: "/images/tools/cors-proxy-123.png",
+    categories: ["development", "api", "tools", "web development"],
+  },
+  {
+    id: "124",
+    name: "Perplexity Labs",
+    description: 
+      "An experimental platform by Perplexity AI showcasing cutting-edge AI research and interactive demos, allowing users to explore and test various AI capabilities and models",
+    url: "https://www.perplexity.ai/labs",
+    image: "/images/tools/perplexity-labs-124.png",
+    categories: ["artificial intelligence", "tools", "research", "education"],
+  },
 ];
 
 export const fixedCategories = [

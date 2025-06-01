@@ -50,11 +50,11 @@ npm run dev
 
 4. Open your browser and navigate to <http://localhost:5173>
 
-## Adding New Tools
+## Adding New Tools & Generating Thumbnails
 
 To add new tools, edit the 🧰 `src/data/tools.ts` file and add new entries to the `tools` array.
 
-To generate thumbnails for these new items follow the instructions in the [thumbnail generator documentation](thumbnail-gen/README.md).
+The subproject in `/thumbnail-gen` is to generate thumbnails. Follow the instructions in the [thumbnail generator documentation](thumbnail-gen/README.md).
 
 ## License
 
