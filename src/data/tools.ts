@@ -35,7 +35,7 @@ export const tools: Tool[] = [
       "Anthropic's AI assistant that's helpful, harmless, and honest with advanced reasoning capabilities",
     url: "https://claude.ai/new",
     image: "/images/tools/claude-ai-3.png",
-    categories: ["ai", "chat", "llm"],
+    categories: ["artificial intelligence", "chat", "llm"],
   },
   {
     id: "4",
@@ -44,7 +44,7 @@ export const tools: Tool[] = [
       "Google's multimodal AI model that can understand and generate text, code, images, and more",
     url: "https://gemini.google.com/",
     image: "/images/tools/gemini-4.png",
-    categories: ["ai", "chat", "llm", "multimodal"],
+    categories: ["artificial intelligence", "chat", "llm", "multimodal"],
   },
   {
     id: "5",
@@ -718,7 +718,7 @@ export const tools: Tool[] = [
       "Platform for building and experimenting with generative AI applications using Google's AI models",
     url: "https://aistudio.google.com/prompts/new_chat",
     image: "/images/tools/google-ai-studio-80.png",
-    categories: ["ai", "chat", "llm"],
+    categories: ["artificial intelligence", "chat", "llm"],
   },
   {
     id: "81",
@@ -727,7 +727,7 @@ export const tools: Tool[] = [
       "OpenAI's conversational AI model that can understand and generate human-like text, assist with writing, answer questions, and help with various creative and technical tasks",
     url: "https://chat.openai.com/",
     image: "/images/tools/chatgpt-81.png",
-    categories: ["ai", "chat", "llm"],
+    categories: ["artificial intelligence", "chat", "llm"],
   },
   {
     id: "82",
@@ -766,7 +766,7 @@ export const tools: Tool[] = [
       "AI-powered code completion tool that helps developers write code faster and with fewer errors by suggesting whole lines or blocks of code as you type",
     url: "https://github.com/copilot",
     image: "/images/tools/github-copilot-84.png",
-    categories: ["ai", "chat", "llm"],
+    categories: ["artificial intelligence", "chat", "llm"],
   },
   {
     id: "85",
@@ -944,7 +944,7 @@ export const tools: Tool[] = [
       "AI-powered search engine that provides comprehensive answers to complex questions by analyzing and synthesizing information from across the web",
     url: "https://www.perplexity.ai/",
     image: "/images/tools/perplexity-ai-104.png",
-    categories: ["ai", "chat", "llm"],
+    categories: ["artificial intelligence", "chat", "llm"],
   },
   {
     id: "105",
@@ -1061,7 +1061,14 @@ export const tools: Tool[] = [
       "Pack your codebase into AI-friendly formats on the web or use the npm package: https://github.com/yamadashy/repomix",
     url: "https://repomix.com/",
     image: "/images/tools/repomix-118.png",
-    categories: ["development", "github", "resources", "tools", "llm", "ai"],
+    categories: [
+      "development",
+      "github",
+      "resources",
+      "tools",
+      "llm",
+      "artificial intelligence",
+    ],
   },
   {
     id: "119",
@@ -1117,11 +1124,57 @@ export const tools: Tool[] = [
   {
     id: "124",
     name: "Perplexity Labs",
-    description: 
+    description:
       "An experimental platform by Perplexity AI showcasing cutting-edge AI research and interactive demos, allowing users to explore and test various AI capabilities and models",
     url: "https://www.perplexity.ai/labs",
     image: "/images/tools/perplexity-labs-124.png",
     categories: ["artificial intelligence", "tools", "research", "education"],
+  },
+  {
+    id: "125",
+    name: "Landingfolio",
+    description:
+      "A comprehensive resource for landing page inspiration, featuring the best landing page designs, templates, and components for Tailwind, Webflow, and Figma. Includes a library of over 805+ components and expert advice on landing page design and optimization.",
+    url: "https://www.landingfolio.com/",
+    image: "/images/tools/landingfolio-125.png",
+    categories: [
+      "design",
+      "inspiration",
+      "templates",
+      "web design",
+      "ui",
+      "ux",
+      "resources",
+    ],
+  },
+  {
+    id: "126",
+    name: "HeyGen",
+    description:
+      "AI-powered video generation platform that creates professional videos with customizable AI avatars, voices, and translations, making video content creation fast and scalable for businesses",
+    url: "https://www.heygen.com/",
+    image: "/images/tools/heygen-126.png",
+    categories: [
+      "artificial intelligence",
+      "video",
+      "content creation",
+      "tools",
+    ],
+  },
+  {
+    id: "127",
+    name: "ElevenLabs",
+    description:
+      "Advanced AI voice synthesis platform offering natural-sounding text-to-speech, voice cloning, and voice design capabilities for creating lifelike voiceovers and audio content",
+    url: "https://elevenlabs.io/",
+    image: "/images/tools/elevenlabs-127.png",
+    categories: [
+      "artificial intelligence",
+      "audio",
+      "text to speech",
+      "tools",
+      "content creation",
+    ],
   },
 ];
 
