@@ -35,7 +35,14 @@ export const tools: Tool[] = [
       "Anthropic's AI assistant that's helpful, harmless, and honest with advanced reasoning capabilities",
     url: "https://claude.ai/new",
     image: "/images/tools/claude-ai-3.png",
-    categories: ["artificial intelligence", "chat", "llm"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "ai for code",
+      "ai for creative writing",
+      "ai for analysis",
+    ],
   },
   {
     id: "4",
@@ -44,7 +51,15 @@ export const tools: Tool[] = [
       "Google's multimodal AI model that can understand and generate text, code, images, and more",
     url: "https://gemini.google.com/",
     image: "/images/tools/gemini-4.png",
-    categories: ["artificial intelligence", "chat", "llm", "multimodal"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "multimodal",
+      "ai for code",
+      "ai for creative writing",
+      "ai for image generation",
+    ],
   },
   {
     id: "5",
@@ -162,7 +177,12 @@ export const tools: Tool[] = [
     description: "Open-source AI art generator",
     url: "https://stability.ai/",
     image: "/images/tools/stable-diffusion-18.png",
-    categories: ["artificial intelligence", "graphic design"],
+    categories: [
+      "artificial intelligence",
+      "graphic design",
+      "ai for image generation",
+      "ai for art",
+    ],
   },
   {
     id: "19",
@@ -212,7 +232,12 @@ export const tools: Tool[] = [
     description: "Platform for building, training and deploying ML models",
     url: "https://huggingface.co/",
     image: "/images/tools/hugging-face-26.png",
-    categories: ["data science", "artificial intelligence"],
+    categories: [
+      "data science",
+      "artificial intelligence",
+      "ai for development",
+      "ai for research",
+    ],
   },
   {
     id: "27",
@@ -718,7 +743,13 @@ export const tools: Tool[] = [
       "Platform for building and experimenting with generative AI applications using Google's AI models",
     url: "https://aistudio.google.com/prompts/new_chat",
     image: "/images/tools/google-ai-studio-80.png",
-    categories: ["artificial intelligence", "chat", "llm"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "ai for development",
+      "ai for prototyping",
+    ],
   },
   {
     id: "81",
@@ -727,7 +758,14 @@ export const tools: Tool[] = [
       "OpenAI's conversational AI model that can understand and generate human-like text, assist with writing, answer questions, and help with various creative and technical tasks",
     url: "https://chat.openai.com/",
     image: "/images/tools/chatgpt-81.png",
-    categories: ["artificial intelligence", "chat", "llm"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "ai for creative writing",
+      "ai for code",
+      "ai for analysis",
+    ],
   },
   {
     id: "82",
@@ -766,7 +804,13 @@ export const tools: Tool[] = [
       "AI-powered code completion tool that helps developers write code faster and with fewer errors by suggesting whole lines or blocks of code as you type",
     url: "https://github.com/copilot",
     image: "/images/tools/github-copilot-84.png",
-    categories: ["artificial intelligence", "chat", "llm"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "ai for code",
+      "ai for development",
+    ],
   },
   {
     id: "85",
@@ -944,7 +988,13 @@ export const tools: Tool[] = [
       "AI-powered search engine that provides comprehensive answers to complex questions by analyzing and synthesizing information from across the web",
     url: "https://www.perplexity.ai/",
     image: "/images/tools/perplexity-ai-104.png",
-    categories: ["artificial intelligence", "chat", "llm"],
+    categories: [
+      "artificial intelligence",
+      "chat",
+      "llm",
+      "ai for research",
+      "ai for analysis",
+    ],
   },
   {
     id: "105",
@@ -1068,6 +1118,8 @@ export const tools: Tool[] = [
       "tools",
       "llm",
       "artificial intelligence",
+      "ai for development",
+      "ai for code",
     ],
   },
   {
@@ -1128,7 +1180,14 @@ export const tools: Tool[] = [
       "An experimental platform by Perplexity AI showcasing cutting-edge AI research and interactive demos, allowing users to explore and test various AI capabilities and models",
     url: "https://www.perplexity.ai/labs",
     image: "/images/tools/perplexity-labs-124.png",
-    categories: ["artificial intelligence", "tools", "research", "education"],
+    categories: [
+      "artificial intelligence",
+      "tools",
+      "research",
+      "education",
+      "ai for research",
+      "ai for experimentation",
+    ],
   },
   {
     id: "125",
@@ -1159,6 +1218,8 @@ export const tools: Tool[] = [
       "video",
       "content creation",
       "tools",
+      "ai for video generation",
+      "ai for content creation",
     ],
   },
   {
@@ -1174,6 +1235,9 @@ export const tools: Tool[] = [
       "text to speech",
       "tools",
       "content creation",
+      "ai for audio generation",
+      "ai for voice synthesis",
+      "ai for content creation",
     ],
   },
 ];
