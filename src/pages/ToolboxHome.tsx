@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 
 import { tools, Tool, fixedCategories } from "../data/tools";
 import Header from "../components/Header";
@@ -49,6 +49,7 @@ function ToolboxHome() {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [showAllItems, setShowAllItems] = useState<boolean>(false);
   const [filteredTools, setFilteredTools] = useState<Tool[]>([]);
+  const categoryFilterRef = useRef<HTMLDivElement>(null);
 
   // Filter tools based on both fixed categories and custom filters
   useEffect(() => {
@@ -99,6 +100,16 @@ function ToolboxHome() {
 
   const handleFilterChange = (filters: string[]) => {
     setActiveFilters(filters);
+    
+    // Scroll to category filter when a filter is applied
+    if (filters.length > 0 && categoryFilterRef.current) {
+      const rect = categoryFilterRef.current.getBoundingClientRect();
+      const offset = 100; // Adjust this value to control how much space is left at the top
+      window.scrollTo({
+        top: window.scrollY + rect.top - offset,
+        behavior: 'smooth'
+      });
+    }
   };
 
   const handleCustomFilterChange = (filters: string[]) => {
@@ -122,14 +133,16 @@ function ToolboxHome() {
       <main className="max-w-6xl mx-auto py-4 sm:py-6 md:py-8 px-6">
         <HeroSection />
 
-        <CategoryFilter
-          categories={fixedCategories}
-          activeFilters={activeFilters}
-          customFilters={customFilters}
-          onFilterChange={handleFilterChange}
-          onCustomFilterChange={handleCustomFilterChange}
-          onSearchChange={handleSearchChange}
-        />
+        <div ref={categoryFilterRef}>
+          <CategoryFilter
+            categories={fixedCategories}
+            activeFilters={activeFilters}
+            customFilters={customFilters}
+            onFilterChange={handleFilterChange}
+            onCustomFilterChange={handleCustomFilterChange}
+            onSearchChange={handleSearchChange}
+          />
+        </div>
 
         {(activeFilters.length > 0 ||
           customFilters.length > 0 ||

@@ -128,8 +128,9 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
       </h2>
       <div className="flex flex-col gap-4">
         {/* Category Filters - Always visible and horizontally scrollable */}
-        <HorizontalScroll isMobile={isMobile}>
-          {categories.map((filter) => (
+        <div className="md:mx-0 -mx-6">
+          <HorizontalScroll isMobile={isMobile}>
+            {categories.map((filter) => (
             <button
               key={filter}
               onClick={() => {
@@ -148,7 +149,8 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
             </button>
           ))}
-        </HorizontalScroll>
+          </HorizontalScroll>
+        </div>
 
         {/* Search Section */}
         {searchOpen ? (
