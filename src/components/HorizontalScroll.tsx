@@ -104,7 +104,7 @@ const HorizontalScroll: React.FC<HorizontalScrollProps> = ({
           )}
 
           {/* Container content */}
-          <div className="flex gap-2 min-w-max">{children}</div>
+          <div className={`flex gap-2 min-w-max ${isMobile ? 'px-4' : ''}`}>{children}</div>
         </div>
       </div>
 
