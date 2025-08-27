@@ -1240,6 +1240,22 @@ export const tools: Tool[] = [
       "ai for content creation",
     ],
   },
+  {
+    id: "128",
+    name: "Daniel Arab",
+    description: "Daniel Arab, Arabic abstract calligraphies, murals",
+    url: "https://www.danielarab.com/",
+    image: "/images/tools/danielarab-128.png",
+    categories: ["portfolio", "design", "inspiration", "courses", "workshops"],
+  },
+  {
+    id: "129",
+    name: "Ingo Hinterding",
+    description: "Ingo Hinterding, CityLab Berlin",
+    url: "https://www.hinterding.com/",
+    image: "/images/tools/hinterding-129.png",
+    categories: ["portfolio", "design", "inspiration", "courses", "workshops"],
+  },
 ];
 
 export const fixedCategories = [
