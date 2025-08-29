@@ -1245,7 +1245,7 @@ export const tools: Tool[] = [
     name: "Daniel Arab",
     description: "Daniel Arab, Arabic abstract calligraphies, murals",
     url: "https://www.danielarab.com/",
-    image: "/images/tools/danielarab-128.png",
+    image: "/images/tools/daniel-arab-128.png",
     categories: ["portfolio", "design", "inspiration", "courses", "workshops"],
   },
   {
@@ -1253,7 +1253,7 @@ export const tools: Tool[] = [
     name: "Ingo Hinterding",
     description: "Ingo Hinterding, CityLab Berlin",
     url: "https://www.hinterding.com/",
-    image: "/images/tools/hinterding-129.png",
+    image: "/images/tools/ingo-hinterding-129.png",
     categories: ["portfolio", "design", "inspiration", "courses", "workshops"],
   },
 ];
