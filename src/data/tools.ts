@@ -1256,6 +1256,39 @@ export const tools: Tool[] = [
     image: "/images/tools/ingo-hinterding-129.png",
     categories: ["portfolio", "design", "inspiration", "courses", "workshops"],
   },
+  {
+    id: "130",
+    name: "Software Engineering Books Collection by Cameron Smith",
+    description: "Free programming books",
+    url: "https://github.com/camoverride/lit",
+    image: "/images/tools/lit-130.png",
+    categories: ["⭐️ favourite", "books", "education", "software engineering"],
+  },
+  {
+    id: "131",
+    name: "React95",
+    description: "A Windows 95 style UI component library for React",
+    url: "https://react95.io/",
+    image: "/images/tools/react95-131.png",
+    categories: ["ui component library", "development", "design"],
+  },
+  {
+    id: "132",
+    name: "RetroUI",
+    description: "A collection of retro-style UI components with a flat design",
+    url: "https://www.retroui.dev/",
+    image: "/images/tools/retroui-132.png",
+    categories: ["ui component library", "development", "design"],
+  },
+  {
+    id: "134",
+    name: "React Bits",
+    description: "Customizable animated components for React",
+    url: "https://reactbits.dev/",
+    image: "/images/tools/react-bits-134.png",
+    categories: ["animation library", "ui component library"],
+  },
+  // https://github.com/shahri23/books
 ];
 
 export const fixedCategories = [
